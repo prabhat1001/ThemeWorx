@@ -19,7 +19,7 @@ const LandingPage = () => {
         <div>
           <div className="  absolute z-10 mt-[30vh] w-full flex flex-col items-center px-4">
             <h1 className="text-white font-poppins font-semibold lg:text-7xl md:text-5xl text-5xl text-center leading-tight drop-shadow-lg"> Craft Your <br /> Coding <span className="text-[#a6fa7f] font-semibold">Realm.</span></h1>
-            <p className="text-white font-poppins lg:text-md md:text-sm text-sm text-center  mt-4 max-w-2xl drop-shadow-md">
+            <p className="text-white font-poppins lg:text-lg md:text-md text-sm text-center mt-4 max-w-2xl drop-shadow-md">
               Bring your favorite worlds to life with themes inspired by<br/>
               movies, anime, and games. <br/><span className="text-[#a6fa7f] font-semibold"> Code your way!</span></p>
           </div>
@@ -29,7 +29,7 @@ const LandingPage = () => {
         <div
           className="
         z-5
-        w-full h-[130vh] 
+        w-full lg:h-[130vh] h-screen
         absolute left-0 top-0  
         brightness-80 xl:backdrop-blur-[4px] md:backdrop-blur-[3px] backdrop-blur-[3px]"
         ></div>
@@ -47,16 +47,19 @@ const LandingPage = () => {
       </div>
 
       {/* Landing 2 */}
-      <div className=" border-2 border-solid border-red-500 w-[100vw] h-screen ">
+      <div className=" border-2 border-solid border-red-500 w-[100vw] h-[80vh] lg:h-[110vh]  ">
     
     {/* Why? heading */}
-    <div className=" w-full relative border-2 border-solid border-blue-500 ">
-      <div className=" absolute z-20 mt-[60vh] w-full flex flex-col items-center px-4 uppercase text-9xl font-inter font-bold 
+    <div className="  absolute z-20 mt-[30vh] lg:mt-[60vh] w-full flex flex-col items-center px-4 ">
+      <div className=" relative  uppercase text-8xl md:text-9xl lg:text-9xl font-inter font-bold 
       bg-gradient-to-b from-black from-30% to-transparent to-80% bg-clip-text text-transparent">
         WHY?
       </div>
-      <div>
-        
+      <div className=" font-LaBelleAurore lg:text-4xl md:text-4xl text-3xl text-center">
+        " Because it's Cool "
+      </div>
+      <div className=" mt-6 font-poppins text-md text-center max-w-3xl text-[#929292]">
+        Turn your coding hours into an adventure. <br/> Escape the boring. Build magic.
       </div>
     </div>
       </div>
