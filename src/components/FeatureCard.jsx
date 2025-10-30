@@ -7,7 +7,7 @@ const FeatureCard = ({ number, title, description }) => {
       <h1 className="text-5xl font-semibold text-[#6579C1]">{number}</h1>
       <h2 className="text-2xl font-semibold text-[#1f1f1f] w-[8rem]">{title}</h2>
       <p className="text-[#393939] text-sm leading-relaxed mb-3 ">{description}</p>
-      <button className="mt-auto self-start px-4 py-2 text-[#6579C1] border-3 border-[#5568a8] rounded-[2rem] hover:bg-[#5568a8] hover:text-white transition-colors duration-300">
+      <button className="mt-auto self-start px-4 py-2 text-[#6579C1] border-2 border-[#5568a8] rounded-[2rem] hover:bg-[#5568a8] hover:text-white transition-colors duration-300">
         Learn More
         </button>
     </div>
