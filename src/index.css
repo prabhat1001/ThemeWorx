@@ -30,3 +30,8 @@
         box-shadow: 0 -50px 80px 80px rgba(2,7,12,1);
     }
   }
+
+
+  .card {
+  @apply border-4 border-[#e6e5e5] rounded-2xl font-poppins bg-[#f4f4f4] hover:bg-white p-6 flex flex-col gap-4 hover:shadow-lg;
+}
