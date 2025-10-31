@@ -17,21 +17,21 @@ const ExploreThemes = () => {
       </div>
 
       {/* cards grid */}
-        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 w-[80vw] lg:h-[60vh]  ">
+        <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 w-[80vw] lg:h-[60vh] md:h-[120vh] h-[150vh]  ">
             {/* Theme cards go here */}
-            <div className='h-full border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
+            <div className=' border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
                 <div className='w-full h-[85%]'>
                     <img src={HarryPotter} alt="" className='w-full h-full object-cover'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium'>Harry Potter</div>
             </div>
-            <div className='h-full border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
+            <div className=' border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
                 <div className='w-full h-[85%]'>
                     <img src={StarWars} alt="" className='w-full h-full object-cover'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium'>Star Wars</div>
             </div>
-            <div className='h-full  border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
+            <div className='  border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
                 <div className='w-full h-[85%]'>
                     <img src={Ghibili} alt="" className='w-full h-full object-cover'/>
                 </div>
