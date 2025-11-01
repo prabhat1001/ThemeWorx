@@ -1,8 +1,9 @@
 import React from 'react'
 import './index.css'
-import LandingPage from './pages/LandingPage/LandingPage.jsx'
-import WeProvide from './pages/WeProvide/WeProvide.jsx'
-import ExploreThemes from './pages/ExploreThemes/ExploreThemes.jsx'
+import LandingPage from './pages/LandingPage.jsx'
+import WeProvide from './pages/WeProvide.jsx'
+import ExploreThemes from './pages/ExploreThemes.jsx'
+import AnotherWorld from './pages/AnotherWorld.jsx'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <LandingPage />
       <WeProvide />
       <ExploreThemes />
+      <AnotherWorld />
     </div>
   )
 }
