@@ -5,7 +5,7 @@ import Ghibili from '../assets/ghibili.jfif'
 
 const ExploreThemes = () => {
   return (
-    <section className=" border-2 border-red-500 w-full min-h-screen  text-center flex flex-col items-center px-6 md:px-10 py-16 bg-white font-poppins">
+    <section className="  w-full min-h-screen  text-center flex flex-col items-center px-6 md:px-10 py-16 bg-white font-poppins">
         {/* Header */}
       <div className=" mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-[#1f1f1f]">
