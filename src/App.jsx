@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage.jsx'
 import WeProvide from './pages/WeProvide.jsx'
 import ExploreThemes from './pages/ExploreThemes.jsx'
 import AnotherWorld from './pages/AnotherWorld.jsx'
+import BottomPage from './pages/BottomPage.jsx'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <WeProvide />
       <ExploreThemes />
       <AnotherWorld />
+      <BottomPage />
     </div>
   )
 }
