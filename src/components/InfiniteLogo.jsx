@@ -4,7 +4,7 @@ import { LogoImg } from '../data/LogoImg.js'
 
 const InfiniteLogo = () => {
   return (
-    <div className=' w-[90vw] h-[30vh] flex justify-center items-center'>
+    <div className=' w-full lg:w-[90vw] h-[30vh] flex justify-center items-center'>
     <Marquee 
     speed={50}
     gradient={true}
