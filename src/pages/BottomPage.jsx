@@ -8,6 +8,7 @@ import Jedi from '../assets/jedi.jpeg'
 const BottomPage = () => {
   return (
     <div className="max-w-screen relative overflow-hidden ">
+
         {/* Bottom 1 */}
         <div className=" w-[100vw] lg:h-[80vh] md:h-[60vh] h-[50vh] flex flex-col justify-center mt items-center gap-10  mb-[20vh] md:mb-[20vh] lg:mb-[30vh]">
             <p className='w-full h-[10vh] flex justify-center items-center font-LaBelleAurore text-[#383838] text-2xl md:text-3xl lg:text-2xl '>Themes Inspired From:</p>
@@ -16,7 +17,7 @@ const BottomPage = () => {
 
 
         {/* CTA */}
-              <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:h-[25vw] md:h-[35vw] h-[100vw] w-[80vw]  rounded-3xl shadow-xl/30 flex ">
+              <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:h-[25vw] md:h-[35vw] aspect-video w-[90vw]  rounded-3xl shadow-xl/30 flex ">
                 <img
                   src={Jedi}
                   className="w-full h-full object-cover rounded-3xl contrast-125 brightness-75 "
@@ -28,8 +29,6 @@ const BottomPage = () => {
               </div>
         
             
-
-
         {/* Bottom 2 */}
         <div className=" relative w-[100vw] lg:h-[120vh] md:h-[70vh] h-[70vh] border-2 border-blue-700 bg-[radial-gradient(circle_at_center,#001820,#000000)] flex flex-col justify-center items-center ">
 
