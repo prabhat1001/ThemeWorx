@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import HarryPotter from '../assets/hp.jfif'
 import StarWars from '../assets/starwars.jfif'
 import Ghibili from '../assets/ghibili.jfif'
@@ -39,11 +41,16 @@ const ExploreThemes = () => {
             </div>
         </div>
 
-        <div className='w-full mt-[10vh]'>
-          <button className="mt-auto bg-[#f4f4f4] self-start px-4 py-2 text-[#6579C1] border-2 border-[#5568a8] rounded-[2rem] hover:bg-[#5568a8] hover:text-white transition-colors duration-300">
-          More Themes
-        </button>
-        </div>
+
+        {/* Button that links to theme page */}
+          <div className='w-full mt-[10vh]'>  
+            <Link to="/themes">
+              <button className="mt-auto bg-[#f4f4f4] self-start px-4 py-2 text-[#6579C1] border-2 border-[#5568a8] rounded-[2rem] hover:bg-[#5568a8] hover:text-white transition-colors duration-300 cursor-pointer">
+                More Themes
+              </button>
+            </Link>
+          </div>
+       
 
     </section>
   )
