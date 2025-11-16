@@ -1,20 +1,17 @@
 import React from 'react'
+import { Routes, Route, useLocation } from "react-router-dom";
 import './index.css'
-import LandingPage from './pages/LandingPage.jsx'
-import WeProvide from './pages/WeProvide.jsx'
-import ExploreThemes from './pages/ExploreThemes.jsx'
-import AnotherWorld from './pages/AnotherWorld.jsx'
-import BottomPage from './pages/BottomPage.jsx'
+import HomePage from './pages/HomePage'
+import ThemesWorld from './pages/ThemesWorld'
 
 const App = () => {
+  const location = useLocation();
+
   return (
-    <div >
-      <LandingPage />
-      <WeProvide />
-      <ExploreThemes />
-      <AnotherWorld />
-      <BottomPage />
-    </div>
+      <Routes location={location} key={location.pathname}>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/themes' element={<ThemesWorld />} />
+      </Routes>
   )
 }
 
