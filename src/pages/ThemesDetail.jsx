@@ -13,7 +13,7 @@ const ThemesDetail = () => {
   return (
     <div className="w-full min-h-screen bg-black text-white flex flex-col items-center">
       {/* Theme Banner */}
-      <div className="w-full border-2  border-red-500 min-h-screen flex justify-center  bg-black">
+      <div className="w-full  min-h-screen flex justify-center  bg-black">
         <div className=" relative w-full h-screen  flex flex-col overflow-hidden">
           <img
             src={theme.bannerImg}
@@ -26,7 +26,7 @@ const ThemesDetail = () => {
 
       {/* Theme Tag Line */}
       <div className=" w-full h-[40vh] md:h-[20vh] flex justify-center items-center">
-        <div className="h-full lg:w-[60vw] md:w-[80vw] w-[80vw] bg-yellow-950">
+        <div className="h-full lg:w-[60vw] md:w-[80vw] w-[80vw]">
           <h1 className="text-white font-lacquer text-3xl md:text-4xl text-center flex justify-center items-center h-full">
             {theme.tagline}
           </h1>
@@ -34,7 +34,7 @@ const ThemesDetail = () => {
       </div>
 
       {/* Theme Image */}
-      <div className=" w-full h-auto border-2 border-red-500 lg:p-20  p-10 mt-[4rem]">
+      <div className=" w-full h-auto  lg:p-20  p-10 mt-[4rem]">
         <h1 className="text-3xl font-poppins">Theme Preview</h1>
         <div className=" mt-8 w-full lg:h-[90vh] bg-[#1b1b1b] rounded-[2rem] aspect-video">
           {/* theme Img */}
@@ -42,7 +42,7 @@ const ThemesDetail = () => {
       </div>
 
       {/* Description */}
-      <div className=" w-full h-auto border-2 border-red-500 lg:p-20  p-10">
+      <div className=" w-full h-auto  lg:p-20  p-10">
         <h1 className="text-3xl font-poppins">Description</h1>
         <div className=" mt-8 w-full  ">
           <p className="text-xl text-[#929292]">{theme.description}</p>
@@ -50,7 +50,7 @@ const ThemesDetail = () => {
       </div>
 
       {/* Installation */}
-      <div className=" w-full h-auto border-2 border-red-500 lg:p-20  p-10">
+      <div className=" w-full h-auto  lg:p-20  p-10">
         <h1 className="text-3xl font-poppins">
           {" "}
           How to Install This VSCode Theme ?
@@ -110,7 +110,7 @@ const ThemesDetail = () => {
 
       {/* Remove and Change Theme */}
 
-      <div className=" w-full h-auto border-2 border-red-500 lg:p-20  p-10">
+      <div className=" w-full h-auto  lg:p-20  p-10">
         <h1 className="text-3xl font-poppins">
           {" "}
           How to Change or Remove the Theme ?
