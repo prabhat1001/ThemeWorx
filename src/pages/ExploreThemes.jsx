@@ -22,22 +22,33 @@ const ExploreThemes = () => {
         <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 w-[80vw] lg:h-[60vh] md:h-[120vh] h-[150vh]  ">
             {/* Theme cards go here */}
             <div className=' border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
+                
+                <Link to="/themes/harry-potter">
                 <div className='w-full h-[85%]'>
                     <img src={HarryPotter} alt="" className='w-full h-full object-cover'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium'>Harry Potter</div>
+                </Link>
             </div>
+
+            
             <div className=' border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
+                <Link to="/themes/star-wars">
                 <div className='w-full h-[85%]'>
                     <img src={StarWars} alt="" className='w-full h-full object-cover'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium'>Star Wars</div>
+                </Link>
             </div>
+
             <div className='  border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
+                
+                <Link to="/themes/ghibili">
                 <div className='w-full h-[85%]'>
                     <img src={Ghibili} alt="" className='w-full h-full object-cover'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium '>Ghibili</div>
+                </Link>
             </div>
         </div>
 
