@@ -51,6 +51,7 @@ const ExploreThemes = () => {
                 </Link>
             </div>
         </div>
+        
 
 
         {/* Button that links to theme page */}
