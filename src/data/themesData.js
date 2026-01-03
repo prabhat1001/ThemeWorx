@@ -40,71 +40,7 @@ export const ThemesData = [
         tagline: " ''Aim your starship at the stars — welcome to the rebellion where impossible is just hyperspace away.''",
         description: "Transport your workspace to a galaxy far, far away. This theme channels the infinite depth of space, the glow of lightsabers, and the discipline of a Jedi warrior. Stark contrasts mirror battles between Light and Dark, guiding your focus like a TIE Fighter across stars. Ideal for both rebels and Sith developers, it blends futuristic UI elements with calm power. When you code, feel the hum of hyperspeed thinking. Whether you build for the Empire or lead the Rebellion, remember: “Do. Or do not. There is no try.” May your code be with you—always.",
         themeImg: "",
-        themeCode: `{
-  // ================================
-  // 🎃 NOSFERATU – Gothic Ambience
-  // Dark, eerie, blue-violet atmosphere
-  // ================================
-  "workbench.colorCustomizations": {
-
-    // Editor background & text
-    "editor.background": "#0D0D2E",      // Deep midnight blue
-    "editor.foreground": "#D4D4D4",      // Soft pale grey text
-    "editorCursor.foreground": "#FFDD44", // Gothic golden cursor
-
-    // Activity Bar (left sidebar icons)
-    "activityBar.background": "#1B1B4B",  // Muted deep violet
-    "activityBar.foreground": "#FFDD44",  // Gold icons
-    "activityBarBadge.background": "#FFDD44",
-    "activityBarBadge.foreground": "#0D0D2E",
-
-    // File explorer background
-    "sideBar.background": "#141432",     // Gothic shadow violet
-    "sideBar.foreground": "#B3B3E6",     // Faded lavender text
-    "sideBarSectionHeader.background": "#1B1B4B",
-
-    // Status bar (bottom)
-    "statusBar.background": "#1B1B4B",
-    "statusBar.foreground": "#FFDD44",
-    "statusBar.noFolderBackground": "#1B1B4B",
-    "statusBar.debuggingBackground": "#661111", // Blood red during debug
-    "statusBar.debuggingForeground": "#FFDD44",
-
-    // Terminal
-    "terminal.background": "#0D0D2E",
-    "terminal.foreground": "#FFDD44",
-    "terminalCursor.background": "#FFDD44",
-    "terminalCursor.foreground": "#FFDD44",
-
-    // Scrollbar
-    "scrollbarSlider.background": "#FFDD4411",   // Gold translucent
-    "scrollbarSlider.hoverBackground": "#FFDD4444",
-    "scrollbarSlider.activeBackground": "#FFDD4477",
-
-    // Minimap
-    "minimap.background": "#0D0D2E",
-
-    // Title bar (window top bar)
-    "titleBar.activeBackground": "#1B1B4B",
-    "titleBar.activeForeground": "#FFDD44",
-    "titleBar.inactiveBackground": "#0D0D2E",
-    "titleBar.inactiveForeground": "#8888AA"
-  },
-
-  // ================================
-  // Token colors (syntax highlighting)
-  // ================================
-  "editor.tokenColorCustomizations": {
-    "comments": "#7A6F99",   // Dusty gothic lavender
-    "keywords": "#FFDD44",   // Golden runes
-    "strings": "#FF7B42",    // Warm ember orange
-    "functions": "#77DD77",  // Pale undead green
-    "variables": "#8888FF"   // Mystic violet
-  },
-
-  // Icon pack
-  "workbench.iconTheme": "vscode-icons"
-        }`,
+        themeCode: "",
     },
     {
         id:3,
