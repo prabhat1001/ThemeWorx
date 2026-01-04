@@ -53,7 +53,151 @@ export const ThemesData = [
         tagline: " ''When the night deepens... welcome to a realm where shadows still breathe''",
         description: "Enter at your own risk. This gothic theme is inspired by silent shadows, moonlit castles, and the chilling elegance of classic horror. Stark monochrome tones evoke Nosferatu’s eerie silence, while faint crimson accents bleed through like forbidden secrets in the night. Perfect for late-night coders who thrive under moonlight and mystery. Every line you write feels like carving runes into ancient stone. Atmospheric, brooding, and unapologetically dramatic—this theme is not for the faint-hearted. You won't fear the darkness… you'll become it. When the sun rises, your bug report vanishes. Productivity after dusk begins here.",
         themeImg: "",
-        themeCode: ``,
+        themeCode: `
+// ===================================
+// 🦇 NOSFERATU – Gothic Ambience 🏰
+// ===================================
+ "workbench.colorCustomizations": {
+
+  //Editor 
+  "editor.background": "#020202",
+  "editor.foreground": "#cfd6dd",
+
+  //Activity Bar
+  "activityBar.background": "#050608",
+  "activityBar.foreground": "#8faec7",
+  "activityBarBadge.background": "#df0202",
+  "activityBarBadge.foreground": "#ffffff",
+
+  //Side Bar
+  "sideBar.background": "#000000",
+  "sideBar.foreground": "#aab4be",
+  "sideBarSectionHeader.background": "#0d1116",
+  "sideBarSectionHeader.foreground": "#cfd6dd",
+
+  //Status Bar
+  "statusBar.background": "#090c0f",
+  "statusBar.foreground": "#8faec7",
+
+  //Title Bar
+  "titleBar.activeBackground": "#050608",
+  "titleBar.activeForeground": "#8faec7",
+  "titleBar.inactiveBackground": "#050608",
+  "titleBar.inactiveForeground": "#5f6b75",
+
+  //Tabs
+  "tab.activeBackground": "#020202",
+  "tab.inactiveBackground": "#050608",
+  "tab.activeForeground": "#e6edf3",
+  "tab.inactiveForeground": "#6b7280",
+  "tab.hoverBackground": "#14151a",
+  "tab.hoverForeground": "#ffffff",
+  "tab.activeBorderTop": "#ff0000",
+
+  //Minimap 
+  "minimap.background": "#0d0d0e",
+
+
+  "list.warningForeground": "#fae677",
+
+  //Bottom Panel
+  "panel.background": "#000000",
+  "panel.border": "#0d1116",
+
+  "editorCursor.foreground": "#ff0000",
+  "editorLineNumber.foreground": "#3b4252",
+  "editorLineNumber.activeForeground": "#8faec7",
+  "editor.selectionBackground": "#111320",
+  "editor.inactiveSelectionBackground": "#1e293b44",
+
+  //Scroll Bar
+  "scrollbarSlider.background": "#081218",
+  "scrollbarSlider.hoverBackground": "#1a1a1a",
+  "scrollbarSlider.activeBackground": "#333232"
+}
+,
+
+
+"editor.semanticHighlighting.enabled": false,
+
+
+// ==================================
+// Token colors (syntax highlighting)
+// ==================================
+"editor.tokenColorCustomizations": {
+  "comments": "#3a3a3a",
+  "strings": "#757272",
+  "keywords": "#9387b3",
+  "functions": "#7dd3fc",
+  "variables": "#cfd6dd",
+  "numbers": "#94a3b8",
+  "types": "#a5b4fc",
+  
+
+  "textMateRules": [
+    {
+      "scope": "comment",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    }
+    ,
+    /* HTML TAG NAMES */
+    {
+      "scope": [
+        "entity.name.tag.js.jsx",
+        "meta.tag.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#db3542",
+        // "fontStyle": "bold"
+      }
+    },
+
+    /* JSX COMPONENT NAMES */
+    {
+      "scope": [
+        "support.class.component.jsx",
+        "support.class.component.tsx"
+      ],
+      "settings": {
+        "foreground": "#A5B4FC"
+      }
+    },
+
+    /* ATTRIBUTES */
+    {
+      "scope": [
+        "entity.other.attribute-name.js.jsx",
+        "meta.tag.attributes.js.jsx",
+
+      ],
+      "settings": {
+        "foreground": "#8a8a8a"
+      }
+    },
+
+    /* STRING VALUES */
+    {
+      "scope": [
+        "string.quoted.double.js.jsx",
+        "meta.tag.attributes.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#9FC5E8",
+        "fontStyle": "italic",
+      }
+    },
+
+  ]
+}
+        `,
     },
     {
         id:4,
