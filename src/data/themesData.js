@@ -28,7 +28,91 @@ export const ThemesData = [
         tagline: " ''Magic awaits beyond Platform 9¾ — welcome to a world the Muggles couldn’t Google.'' ",
         description: "Step into a workspace where every keystroke feels like casting a spell. Designed for wizards of code, this theme captures the candlelit charm of Hogwarts, floating parchment vibes, and deep library nights studying spells—or debugging errors. Enchanted gold accents glow like Lumos on dark backgrounds reminiscent of the Forbidden Forest. Perfect for developers who believe magic exists in clean syntax, well-crafted logic, and unbreakable focus. Whether you're building apps or conjuring new worlds, this theme whispers, “It is our choices that show what we truly are… so choose dark mode.” Accio productivity—mischief managed!",
         themeImg: "",
-        themeCode: ``,
+        themeCode: `
+// ===================================
+// 🧙‍♂️ Harry Potter - Wizarding World 🏰
+// ===================================
+
+  "workbench.colorCustomizations": {
+
+    // Editor
+  "editor.background": "#030a0f",
+  "editor.foreground": "#d9f3ee",
+
+  // Activity Bar
+  "activityBar.background": "#0b1e26",
+  "activityBar.foreground": "#8fa89a",
+  "activityBarBadge.background": "#017c4d",
+  "activityBarBadge.foreground": "#ffffff",
+
+  // Side Bar
+  "sideBar.background": "#000d13",
+  "sideBar.foreground": "#d9f3ee",
+  "sideBarSectionHeader.background": "#011f2081",
+  "sideBarSectionHeader.foreground": "#a89771",
+      
+  // Status Bar
+  "statusBar.background": "#061010",
+  "statusBar.foreground": "#b4b093",
+
+  // Title Bar
+  "titleBar.activeBackground": "#0b1e26",
+  "titleBar.activeForeground": "#b7cfc9", 
+
+
+  // Tabs
+  "tab.activeBackground": "#18292e",
+  "tab.activeForeground": "#d9f3ee",
+  "tab.inactiveBackground": "#030a0f",
+  "tab.inactiveForeground": "#9cbdac",
+
+  // Panels
+  "panel.background": "#000d13",
+  "panel.border": "#0f3b35",
+  "panelTitle.activeBorder": "#00be66",
+
+  "editorLineNumber.foreground": "#2f7f85",
+  "editorLineNumber.activeForeground": "#b3b192",
+  "editor.selectionBackground": "#04546d67",
+  "editor.inactiveSelectionBackground": "#1f5f6665",
+  "editor.selectionHighlightBackground": "#017c4df3",
+  "editor.wordHighlightBackground": "#0129333f",
+  "editorIndentGuide.background1": "#0f3b35",
+  "editorIndentGuide.activeBackground1": "#8fa89a",
+
+  "editorCursor.foreground": "#00be66",
+    
+},
+
+
+// Editor Syntax Colors
+"editor.tokenColorCustomizations": {
+  "comments": "#4e7174",
+  "strings": "#8fa89a",
+  "keywords": "#01c77b",
+  "functions": "#b7cfc9",
+  "numbers": "#8fa89a",
+  "types": "#1f5f66",
+  "variables": "#d9f3ee",
+  
+
+
+  "textMateRules": [
+    {
+      "scope": "comment",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    }
+  ]
+},
+        `,
     },
     {
         id:2,
@@ -48,7 +132,6 @@ export const ThemesData = [
         src: Nosferatu,
         alt:'Nosferatu',
         title: "Nosferatu ",
-
         bannerImg: NosferatuBanner,
         tagline: " ''When the night deepens... welcome to a realm where shadows still breathe''",
         description: "Enter at your own risk. This gothic theme is inspired by silent shadows, moonlit castles, and the chilling elegance of classic horror. Stark monochrome tones evoke Nosferatu’s eerie silence, while faint crimson accents bleed through like forbidden secrets in the night. Perfect for late-night coders who thrive under moonlight and mystery. Every line you write feels like carving runes into ancient stone. Atmospheric, brooding, and unapologetically dramatic—this theme is not for the faint-hearted. You won't fear the darkness… you'll become it. When the sun rises, your bug report vanishes. Productivity after dusk begins here.",
