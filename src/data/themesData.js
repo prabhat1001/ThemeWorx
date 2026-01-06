@@ -124,7 +124,87 @@ export const ThemesData = [
         tagline: " ''Aim your starship at the stars — welcome to the rebellion where impossible is just hyperspace away.''",
         description: "Transport your workspace to a galaxy far, far away. This theme channels the infinite depth of space, the glow of lightsabers, and the discipline of a Jedi warrior. Stark contrasts mirror battles between Light and Dark, guiding your focus like a TIE Fighter across stars. Ideal for both rebels and Sith developers, it blends futuristic UI elements with calm power. When you code, feel the hum of hyperspeed thinking. Whether you build for the Empire or lead the Rebellion, remember: “Do. Or do not. There is no try.” May your code be with you—always.",
         themeImg: "",
-        themeCode: "",
+        themeCode: `
+// =====================================
+// 👽 STAR WARS – Jedi Archive Echoes 🚀
+// =====================================
+
+"workbench.colorCustomizations": {
+
+  //Editor 
+  "editor.background": "#000",
+  "editor.foreground": "#e6e6e6",
+
+  //Activity Bar
+  "activityBar.background": "#050608",
+  "activityBar.foreground": "#ce0101",
+  "activityBar.activeBorder": "#ce0101",
+  "activityBarBadge.background": "#6620e9",
+  "activityBarBadge.foreground": "#ffffff",
+
+  //Side Bar
+  "sideBar.background": "#000",
+  "sideBar.foreground": "#c7d2fe",
+  "sideBarSectionHeader.background": "#080c1a",
+  "sideBarSectionHeader.foreground": "#e0e7ff",
+
+   //Status Bar
+  "statusBar.background": "#0f141b",
+  "statusBar.foreground": "#84a4fa",
+
+  //Title Bar
+  "titleBar.activeBackground": "#050608",
+  "titleBar.activeForeground": "#84a4fa",
+
+  //Tabs
+  "tab.activeBackground": "#303038",
+  "tab.inactiveBackground": "#0b0d12",
+  "tab.activeForeground": "#ffffff",
+  "tab.inactiveForeground": "#94a3b8",
+
+  //Panel
+  "panel.background": "#000",
+  "panel.border": "#1f2937",
+
+  //Scrollbar
+  "scrollbarSlider.background": "#47556988",
+  "scrollbarSlider.hoverBackground": "#475569aa",
+  "scrollbarSlider.activeBackground": "#475569cc",
+
+  "editorCursor.foreground": "#2a91f1",
+
+  "editorLineNumber.foreground": "#475569",
+  "editorLineNumber.activeForeground": "#f0c75e",
+  "editor.selectionBackground": "#1e3a8a88",
+  "editor.inactiveSelectionBackground": "#1e3a8a44",
+  
+},
+
+"editor.tokenColorCustomizations": {
+  "comments": "#833734",
+  "strings": "#adadad",
+  "keywords": "#ff746f",
+  "functions": "#60a5fa",
+  "numbers": "#d7b22e",
+  "types": "#a78bfa",
+  "variables": "#e5e7eb",
+
+  "textMateRules": [
+    {
+      "scope": "comment",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}
+,`,
     },
     {
         id:3,
