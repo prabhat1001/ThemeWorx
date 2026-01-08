@@ -50,7 +50,7 @@ const ThemesDetail = () => {
       </div>
 
       {/* Installation */}
-      <div className=" w-full h-auto  lg:p-20  p-10">
+      <di className=" w-full h-auto  lg:p-20  p-10">
         <h1 className="text-3xl font-poppins">
           {" "}
           How to Install This VSCode Theme ?
@@ -106,7 +106,7 @@ const ThemesDetail = () => {
             <li>7. Save the file. Your theme should apply instantly!</li>
           </ul>
         </div>
-      </div>
+      </di>
 
       {/* Remove and Change Theme */}
 
@@ -116,10 +116,11 @@ const ThemesDetail = () => {
           How to Change or Remove the Theme ?
         </h1>
         <div className=" mt-8 w-full  ">
-          <p className="text-xl text-[#929292] leading-loose font-poppins">
+          <details>
+          <summary className="text-xl text-[#d1d1d1] leading-loose font-poppins">
             {" "}
-            ▶ To change the theme :
-          </p>
+             To change the theme :
+          </summary>
           <ul className="text-xl text-[#929292] leading-loose font-poppins">
             <li>
               1. Press{" "}
@@ -137,11 +138,13 @@ const ThemesDetail = () => {
               2. Pick any theme from the list to override the current one.
             </li>
           </ul>
+          </details>
 
-          <p className="text-xl text-[#929292] leading-loose font-poppins mt-10">
+          <details>
+          <summary className="text-xl text-[#d1d1d1] leading-loose font-poppins mt-10">
             {" "}
-            ▶ To remove the custom theme :
-          </p>
+             To remove the custom theme :
+          </summary>
           <ul className="text-xl text-[#929292] leading-loose font-poppins">
             <li>
               1. Open Delete or comment out the following: again ({" "}
@@ -174,6 +177,8 @@ const ThemesDetail = () => {
               theme.
             </li>
           </ul>
+          </details>
+
         </div>
       </div>
 
