@@ -116,6 +116,7 @@ const ThemesDetail = () => {
           How to Change or Remove the Theme ?
         </h1>
         <div className=" mt-8 w-full  ">
+          {/* disclosure widget 1 */}
           <details>
           <summary className="text-xl text-[#d1d1d1] leading-loose font-poppins">
             {" "}
@@ -140,6 +141,7 @@ const ThemesDetail = () => {
           </ul>
           </details>
 
+          {/* disclosure widget 2 */}
           <details>
           <summary className="text-xl text-[#d1d1d1] leading-loose font-poppins mt-10">
             {" "}
