@@ -102,7 +102,7 @@ const ThemesDetail = () => {
               </span>{" "}
               sections.
             </li>
-            <li>6. If they already exist, just merge the values.</li>
+            <li>6. If they already exist, than either remove them or comment out the values.</li>
             <li>7. Save the file. Your theme should apply instantly!</li>
           </ul>
         </div>
