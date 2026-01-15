@@ -373,7 +373,226 @@ export const ThemesData = [
         tagline: " ''Wander softly — welcome to a world where spirits stir the wind and silence speaks.''",
         description: "A peaceful escape into a world painted by serenity and imagination. Inspired by Studio Ghibli’s dreamy forests, floating lights, and gentle pastel dusk skies, this theme invites calm concentration. Soft earth tones nurture creativity, while warm highlights spark curiosity like tiny forest spirits. Ideal for developers who see beauty in details and poetry in functions. Each tab feels like opening a new scene from Totoro’s meadow or Howl’s moving abstraction. Let code flow like wind through trees—quiet, enchanting, purposeful. Sometimes you have to take a leap… the magic begins after you start typing.",
         themeImg: "",
-        themeCode: ``,
+        themeCode: `
+        
+// ===================================
+// 🍃 GHIBLI STUDIOS – Serene Coding 🌸
+// ===================================
+
+
+// If your VS Code already have a different color theme applied, 
+// then add this below color theme specifically for this Ghibili Theme, 
+// and remove or comment out the other "workbench.colorTheme" line.
+
+
+// Base color theme is selected as Default Light+ 
+"workbench.colorTheme": "Default Light+",
+
+"workbench.colorCustomizations": {
+
+  // Settings UI
+  "foreground": "#3b2a14",
+  "settings.editorBackground": "#f3e4c7",
+  "settings.headerForeground": "#2f1e0f",
+  "settings.settingsHeaderForeground": "#3b2a14",
+  "settings.descriptionForeground": "#5a3d1a",
+  "settings.textInputForeground": "#2f1e0f",
+  "settings.numberInputForeground": "#2f1e0f",
+  "settings.checkboxForeground": "#3b2a14",
+  "settings.dropdownBackground": "#e6d7b8",
+  "settings.dropdownForeground": "#3b2a14",
+  "textLink.foreground": "#7a5528",
+  "textLink.activeForeground": "#9c6b2f",
+
+
+  // Editor
+  "editor.background": "#f0e3cc",
+  "editor.foreground": "#75592a",
+  "editorCursor.foreground": "#999c57",
+  "editor.lineHighlightBackground": "#b59b738f",
+  "editor.selectionBackground": "#b1997165",
+  "editor.inactiveSelectionBackground": "#59430bec",
+
+  // Activity Bar
+  "activityBar.background": "#d7c096",
+  "activityBar.foreground": "#583d0f",
+  "activityBar.inactiveForeground": "#b49b74",
+  "activityBarBadge.background": "#05a793",
+  "activityBarBadge.foreground": "#FFFFFF",
+  "activityBar.activeBorder": "#e08512",
+
+  // Sidebar
+  "sideBar.background": "#e0d1b2",
+  "sideBar.foreground": "#76582d",
+  "sideBarSectionHeader.background": "#989b56",
+  "sideBarSectionHeader.foreground": "#ffffff",
+  "sideBarTitle.foreground": "#583d0f",
+
+  "list.activeSelectionBackground": "#cbb89262",
+  "list.activeSelectionForeground": "#161616",
+  "list.inactiveSelectionBackground": "#d3c4a3",
+  "list.hoverBackground": "#d4c2a0",
+  "list.hoverForeground": "#583d0f",
+
+  "input.background": "#b19870",
+  "input.foreground": "#2b1d0e",
+  "input.placeholderForeground": "#5a4325",
+  "input.border": "#8a6a3f",
+  "focusBorder": "#7a5528",
+
+
+  // Status BAr
+  "statusBar.background": "#02a998",
+  "statusBar.foreground": "#ffff",
+  "statusBar.noFolderBackground": "#D8E6DC",
+
+  // Tabs
+  "tab.activeBackground": "#999c57",
+  "tab.activeForeground": "#ebe6e2",
+  "tab.inactiveBackground": "#d2bf9b",
+  "tab.inactiveForeground": "#77592c",
+  "tab.hoverBackground": "#b8a67f",
+  "tab.hoverForeground": "#4a3a12",
+  "tab.border": "#e0d1b2",
+  "tab.activeBorderTop": "#999c57",
+  "editorGroupHeader.tabsBorder": "#e0d1b2",
+  "editorGroupHeader.tabsBackground": "#b8a67f",
+
+
+  // Title Bar
+  "titleBar.activeBackground": "#02a998",
+  "titleBar.activeForeground": "#ffffff",
+
+  // Scroll Bar
+  "scrollbarSlider.background": "#999c57",
+  "scrollbarSlider.hoverBackground": "#999c57ce",
+  "scrollbarSlider.activeBackground": "#999c57",
+
+  // Panels
+  "panel.background": "#d3bc92",
+  "panel.border": "#75592a",
+  "panelTitle.activeBorder": "#75592a",
+  "panelTitle.activeForeground": "#75592a",
+  "panelTitle.inactiveForeground": "#77582d",
+  "panelSectionHeader.background": "#989b56",
+
+  // Mini Map
+  "minimap.background": "#989b5652"
+},
+
+// Editor Syntax Colors
+"editor.tokenColorCustomizations": {
+  "textMateRules": [
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#5d3e0859",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#5c3f0b"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#749402",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#7BAE8E"
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#7f5f75"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag.js.jsx",
+        "entity.name.tag.html"
+      ],
+      "settings": {
+        "foreground": "#02a998",
+        "fontStyle": "bold"
+      }
+    },
+    { "scope": [
+      "variable.other.readwrite.alias.js",
+      "meta.import.js"
+      ],
+      "settings": {
+        "foreground": "#5c3e0c",
+      }
+
+    },
+    {
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#B58B4F"
+      }
+    },{
+      "scope": [
+        "meta.jsx.children.js.jsx",
+        "meta.tag.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#020911",
+      }
+    },
+    {
+      "scope": [
+        "variable.other.constant.object.jsx",
+        "constant",
+        "entity.name.constant"
+      ],
+      "settings": {
+        "foreground": "#d36600",
+      }
+    },
+    {
+      "scope": [
+        "meta.object-literal.key.js",
+        "meta.object.member.js",
+        "meta.objectliteral.js",
+
+      ],
+      "settings": {
+        "foreground": "#474747",
+      }
+    },
+    {
+      //for key value pairs in json
+      "scope": [
+        "support.type.property-name.json.comments",
+        "string.json.comments"
+      ],
+      "settings": {
+        "foreground": "#75592a",
+    }
+    },
+    {
+    
+      "scope": [
+        "entity.other.attribute-name.js.jsx",
+        "meta.tag.attributes.js.jsx",
+        "meta.tag.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#1b62e7",
+    }
+    }
+
+  ]
+},`,
     },
     {
         id:5,
