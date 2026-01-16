@@ -604,71 +604,145 @@ export const ThemesData = [
         tagline: " '' Welcome to Hawkins. here things are a little bit stranger ! ''",
         description: "Step into the neon-lit shadows of Hawkins with this Stranger Things–inspired VS Code theme — where your code doesn’t just run, it stranges. Designed for developers who like their editors dark, dramatic, and occasionally Demogorgon-free, this theme brings retro sci-fi vibes, glowing synth colors, and just enough mystery to keep you coding “upside down.” Whether you're debugging portals or simply trying to escape bugs from another dimension, this theme keeps your workspace eerie yet comforting. Here's a warning for you! prolonged use may cause sudden nostalgia, increased productivity, and the urge to bicycle at night with walkie-talkies. Pretty strange… right?",
         themeImg: "",
-        themeCode: `{
-  // ================================
-  // 🎃 NOSFERATU – Gothic Ambience
-  // Dark, eerie, blue-violet atmosphere
-  // ================================
-  "workbench.colorCustomizations": {
+        themeCode: `
+// ===================================
+// 👾 STRANGER THINGS – Way to Upside Down🌌
+// ===================================
 
-    // Editor background & text
-    "editor.background": "#0D0D2E",      // Deep midnight blue
-    "editor.foreground": "#D4D4D4",      // Soft pale grey text
-    "editorCursor.foreground": "#FFDD44", // Gothic golden cursor
 
-    // Activity Bar (left sidebar icons)
-    "activityBar.background": "#1B1B4B",  // Muted deep violet
-    "activityBar.foreground": "#FFDD44",  // Gold icons
-    "activityBarBadge.background": "#FFDD44",
-    "activityBarBadge.foreground": "#0D0D2E",
+"workbench.colorCustomizations": {
+  /* Base */
+  "foreground": "#ff0000",
+  "focusBorder": "#c70000",
 
-    // File explorer background
-    "sideBar.background": "#141432",     // Gothic shadow violet
-    "sideBar.foreground": "#B3B3E6",     // Faded lavender text
-    "sideBarSectionHeader.background": "#1B1B4B",
+  /* Editor */
+  "editor.background": "#080808",
+  "editor.foreground": "#ffffff",
+  "editorLineNumber.foreground": "#540000",
+  "editorLineNumber.activeForeground": "#ffffff",
+  "editorCursor.foreground": "#ff0000",
+  "editor.selectionBackground": "#540000",
+  "editor.inactiveSelectionBackground": "#92000055",
+  "editor.lineHighlightBackground": "#54000033",
 
-    // Status bar (bottom)
-    "statusBar.background": "#1B1B4B",
-    "statusBar.foreground": "#FFDD44",
-    "statusBar.noFolderBackground": "#1B1B4B",
-    "statusBar.debuggingBackground": "#661111", // Blood red during debug
-    "statusBar.debuggingForeground": "#FFDD44",
+  /* Sidebar */
+  "sideBar.background": "#000000",
+  "sideBar.foreground": "#c70000",
+  "sideBarTitle.foreground": "#ff0000",
+  "sideBarSectionHeader.background": "#000000",
+  "sideBarSectionHeader.foreground": "#ff0000",
 
-    // Terminal
-    "terminal.background": "#0D0D2E",
-    "terminal.foreground": "#FFDD44",
-    "terminalCursor.background": "#FFDD44",
-    "terminalCursor.foreground": "#FFDD44",
+  /* Activity Bar */
+  "activityBar.background": "#000000",
+  "activityBar.foreground": "#d4d4d4",
+  "activityBar.inactiveForeground": "#5a5a5a",
+  "activityBarBadge.background": "#ff0000",
+  "activityBarBadge.foreground": "#ffffff",
+  "activityBar.activeBorder": "#ff0000",
 
-    // Scrollbar
-    "scrollbarSlider.background": "#FFDD4411",   // Gold translucent
-    "scrollbarSlider.hoverBackground": "#FFDD4444",
-    "scrollbarSlider.activeBackground": "#FFDD4477",
+  /* Tabs */
+  "editorGroupHeader.tabsBackground": "#000000",
+  "tab.activeBackground": "#000000",
+  "tab.activeForeground": "#ff0000",
+  "tab.inactiveBackground": "#2b2b2b",
+  "tab.inactiveForeground": "#d4d4d4",
+  "tab.border": "#540000",
 
-    // Minimap
-    "minimap.background": "#0D0D2E",
+  /* Title Bar */
+  "titleBar.activeBackground": "#000000",
+  "titleBar.activeForeground": "#ff0000",
+  "titleBar.inactiveBackground": "#000000",
+  "titleBar.inactiveForeground": "#540000",
 
-    // Title bar (window top bar)
-    "titleBar.activeBackground": "#1B1B4B",
-    "titleBar.activeForeground": "#FFDD44",
-    "titleBar.inactiveBackground": "#0D0D2E",
-    "titleBar.inactiveForeground": "#8888AA"
-  },
+  /* Status Bar */
+  "statusBar.background": "#000000",
+  "statusBar.foreground": "#a0a0a0",
+  "statusBar.noFolderBackground": "#000000",
 
-  // ================================
-  // Token colors (syntax highlighting)
-  // ================================
-  "editor.tokenColorCustomizations": {
-    "comments": "#7A6F99",   // Dusty gothic lavender
-    "keywords": "#FFDD44",   // Golden runes
-    "strings": "#FF7B42",    // Warm ember orange
-    "functions": "#77DD77",  // Pale undead green
-    "variables": "#8888FF"   // Mystic violet
-  },
+  /* Terminal */
+  "terminal.background": "#000000",
+  "terminal.foreground": "#ff0000",
+  "terminalCursor.foreground": "#ff0000",
 
-  // Icon pack
-  "workbench.iconTheme": "vscode-icons"
-        }`,
+  /* Scrollbar */
+  "scrollbarSlider.background": "#54000088",
+  "scrollbarSlider.hoverBackground": "#920000aa",
+  "scrollbarSlider.activeBackground": "#c70000",
+
+  /* Panels */
+  "panel.background": "#000000",
+  "panel.border": "#540000"
+},
+
+"editor.tokenColorCustomizations": {
+  "comments": "#540000",
+  "strings": "#ff0000",
+  "keywords": "#c70000",
+  "numbers": "#ff0000",
+  "functions": "#ff0000",
+  "variables": "#c70000",
+  "types": "#920000",
+
+
+  "textMateRules": [
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#7e7e7e",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#ff0000"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#c70000",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#ff0000"
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#c70000"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "entity.name.tag.html",
+        "entity.name.tag.jsx",
+        "entity.name.tag.tsx"
+      ],
+      "settings": {
+        "foreground": "#ff0000"
+      }
+    },
+    {
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#920000"
+      }
+    },
+    {
+      "scope": ["support.type.property-name.json.comments",
+                "string.json.comments"],
+      "settings": {
+        "foreground": "#ffff"
+      }
+    }
+  ]
+},`,
 
     
     },
