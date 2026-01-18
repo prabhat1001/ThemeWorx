@@ -15,6 +15,12 @@ import StrangerThingsBanner from "../assets/St-banner.jpg";
 import JurassicParkBanner from "../assets/DinoBanner.jpg";
 
 // Theme Screenshot Image
+import HarryPotterThemeImg from "../assets/Preview/HP-theme-preview.png";
+import StarWarsThemeImg from "../assets/Preview/StarWars-theme-preview.png";
+import NosferatuThemeImg from "../assets/Preview/Nosferatu-theme-preview.png";
+import GhibiliThemeImg from "../assets/Preview/Ghibili-theme-preview.png";
+import StrangerThingsThemeImg from "../assets/Preview/Stranger-theme-preview.png";
+import JurassicParkThemeImg from "../assets/Preview/Jurassic-theme-preview.png";
 
 export const ThemesData = [
   {
@@ -24,6 +30,7 @@ export const ThemesData = [
     alt: "HarryPotter",
     title: "Harry Potter",
     bannerImg: HarryPotterBanner,
+    previewImg: HarryPotterThemeImg,
     tagline:
       " ''Magic awaits beyond Platform 9¾ — welcome to a world the Muggles couldn’t Google.'' ",
     description:
@@ -121,6 +128,7 @@ export const ThemesData = [
     alt: "StarWars",
     title: "Star Wars",
     bannerImg: darthVaderBanner,
+    previewImg: StarWarsThemeImg,
     tagline:
       " ''Aim your starship at the stars — welcome to the rebellion where impossible is just hyperspace away.''",
     description:
@@ -370,9 +378,9 @@ export const ThemesData = [
     slug: "ghibili",
     src: Ghibili,
     alt: "Ghibili",
-
     title: "Ghibili Studios",
     bannerImg: GhibiliBanner,
+    previewImg: GhibiliThemeImg,
     tagline:
       " ''Wander softly — welcome to a world where spirits stir the wind and silence speaks.''",
     description:
@@ -606,6 +614,7 @@ export const ThemesData = [
     alt: "StrangerThings",
     title: "Stranger Things",
     bannerImg: StrangerThingsBanner,
+    previewImg: StrangerThingsThemeImg,
     tagline:
       " '' Welcome to Hawkins. here things are a little bit stranger ! ''",
     description:
@@ -756,9 +765,9 @@ export const ThemesData = [
     slug: "jurassic-park",
     src: Jurassic,
     alt: "JurassicPark",
-
     title: "Jurassic Park",
     bannerImg: JurassicParkBanner,
+    previewImg: JurassicParkThemeImg,
     tagline:
       " '' Life finds a way, Welcome… to a world where giants walk again.'' ",
     description:
