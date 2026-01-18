@@ -36,8 +36,13 @@ const ThemesDetail = () => {
       {/* Theme Image */}
       <div className=" w-full h-auto  lg:p-20  p-10 mt-[4rem]">
         <h1 className="text-3xl font-poppins">Theme Preview</h1>
-        <div className=" mt-8 w-full lg:h-[90vh] bg-[#1b1b1b] rounded-[2rem] aspect-video">
+        <div className=" mt-8 w-full  lg:h-[100vh] rounded-[1rem] aspect-video border-2 border-[#8d8d8d] overflow-hidden ">
           {/* theme Img */}
+          <img
+            src={theme.previewImg}
+            alt={theme.title}
+            className="w-full h-full object-fit rounded-[1rem]"
+          />
         </div>
       </div>
 
