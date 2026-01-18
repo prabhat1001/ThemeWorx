@@ -116,9 +116,10 @@ const ThemesDetail = () => {
           How to Change or Remove the Theme ?
         </h1>
         <div className=" mt-8 w-full  ">
+
           {/* disclosure widget 1 */}
-          <details>
-          <summary className="text-xl text-[#d1d1d1] leading-loose font-poppins">
+          <details open>
+          <summary className=" text-xl text-[#d1d1d1] leading-loose font-poppins">
             {" "}
              To change the theme :
           </summary>
@@ -142,7 +143,7 @@ const ThemesDetail = () => {
           </details>
 
           {/* disclosure widget 2 */}
-          <details>
+          <details open>
           <summary className="text-xl text-[#d1d1d1] leading-loose font-poppins mt-10">
             {" "}
              To remove the custom theme :
