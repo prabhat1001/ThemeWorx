@@ -17,7 +17,7 @@ import JurassicParkBanner from "../assets/DinoBanner.jpg";
 // Theme Screenshot Image
 import HarryPotterThemeImg from "../assets/Preview/HP-theme-preview.png";
 import StarWarsThemeImg from "../assets/Preview/StarWars-theme-preview.png";
-import NosferatuThemeImg from "../assets/Preview/Nosferatu-theme-preview.png";
+import NosferatuThemeImg from "../assets/Preview/Count-preview.png";
 import GhibiliThemeImg from "../assets/Preview/Ghibili-theme-preview.png";
 import StrangerThingsThemeImg from "../assets/Preview/Stranger-theme-preview.png";
 import JurassicParkThemeImg from "../assets/Preview/Jurassic-theme-preview.png";
@@ -222,6 +222,7 @@ export const ThemesData = [
     alt: "Nosferatu",
     title: "Nosferatu ",
     bannerImg: NosferatuBanner,
+    previewImg: NosferatuThemeImg,
     tagline:
       " ''When the night deepens... welcome to a realm where shadows still breathe''",
     description:
