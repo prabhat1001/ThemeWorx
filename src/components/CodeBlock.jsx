@@ -22,8 +22,9 @@ const CodeBlock = ({ code }) => {
       {/* Copy Button */}
       <button
         onClick={handleCopy}
+
         className="absolute top-3 right-3 z-20 bg-[#1b1b1b] hover:bg-[#272727] text-white/80 hover:text-white
-                   transition-all p-2 rounded-lg backdrop-blur-sm border border-white/10"
+                   transition-all p-2 rounded-lg backdrop-blur-sm border border-white/10 focus:outline-none flex items-center justify-center"
       >
         {copied ? <FiCheck size={18} /> : <FiCopy size={18} />}
       </button>
@@ -52,9 +53,8 @@ const CodeBlock = ({ code }) => {
         customStyle={{
           background: "#0f0f0f",
           padding: "20px",
-          paddingTop: "50px",
           borderRadius: "12px",
-          fontSize: "15px",
+          fontSize: "16px",
           fontFamily: "JetBrains Mono, Fira Code, monospace",
         }}
       >
