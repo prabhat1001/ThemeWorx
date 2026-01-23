@@ -36,7 +36,7 @@
 
     .bottom-vignette{
         @apply shadow-none; /* Reset any existing shadows */
-        box-shadow: 0 -50px 80px 80px rgba(2,7,12,1);
+        box-shadow: 0 -50px 80px 80px rgba(0, 0, 0, 1);
     }
   }
 
