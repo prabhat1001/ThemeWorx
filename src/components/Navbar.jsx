@@ -1,19 +1,20 @@
 import React, { useState } from "react";
-
+import Logo from "../assets/themeworxLogo.png"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent px-6 py-4 w-full relative">
+    <nav className="bg-transparent px-6 lg:px-12  w-full relative">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo - Left */}
-        <div className="flex-1 flex items-center">
-          <div className="text-white font-caesar text-3xl tracking-widest">
+        <div className="flex-1 flex items-center ">
+          {/* <div className="text-white font-caesar text-3xl tracking-widest">
             themeWorx.
-          </div>
+          </div> */}
+          <img src={Logo} alt="" className=" h-[4rem] lg:h-[5rem]" />
         </div>
         {/* Center Nav Links - Large screens */}
-        <div className="hidden md:flex flex-1 justify-center space-x-8 items-center font-poppins">
+        <div className="hidden md:flex flex-1 justify-center space-x-8 items-center font-poppins  ">
           <a href="/" className="relative text-white text-lg px-3 py-1 hover:underline">Home</a>
           <a href="#about" className='relative text-white text-lg px-3 py-1 hover:underline'>About</a>
           <a href="#faqs" className="relative text-white text-lg px-3 py-1 hover:underline ">FAQs</a>
