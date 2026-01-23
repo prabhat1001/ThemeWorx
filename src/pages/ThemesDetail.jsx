@@ -55,7 +55,7 @@ const ThemesDetail = () => {
       </div>
 
       {/* Installation */}
-      <di className=" w-full h-auto  lg:p-20  p-10">
+      <div className=" w-full h-auto  lg:p-20  p-10">
         <h1 className="text-3xl font-poppins">
           {" "}
           How to Install This VSCode Theme ?
@@ -78,7 +78,7 @@ const ThemesDetail = () => {
             <li>
               3. Type and select:{" "}
               <span className="font-mono text-[#cecece] bg-[#1f1f1f]  p-1 rounded text-center">
-                Preferences: Open Settings (JSON)
+                Preferences: Open User Settings (JSON)
               </span>
             </li>
             <li>4. Copy the theme code provided below 👇</li>
@@ -107,11 +107,23 @@ const ThemesDetail = () => {
               </span>{" "}
               sections.
             </li>
-            <li>6. If they already exist, than either remove them or comment out the values.</li>
+            <li>6. If these sections already exist, than either replace the existing values or comment out older entries and keep the new configuration.</li>
             <li>7. Save the file. Your theme should apply instantly!</li>
           </ul>
         </div>
-      </di>
+      </div>
+
+
+      {/* Note: */}
+      <div className=" w-full h-auto lg:px-10  p-10">
+        <div className="w-[85vw] p-10 lg:ml-10 border-2 border-green-600 rounded-2xl bg-[#001106c0] font-poppins text-green-400 text-l italic leading-loose ">
+                NOTE: These configure settings will apply to all profile in VScode. If you want to change theme or want to undo the theme later, it's better to copy - paste the previously existing values of  {" "}
+                <span className="font-mono text-[#cecece] bg-[#01441b5b] p-1 rounded text-center"> {" "} workbench.colorCustomizations </span> 
+                  & {" "}
+                 <span className="font-mono text-[#cecece] bg-[#01441b5b] p-1 rounded text-center"> {" "} editor.tokenColorCustomizations{" "} </span> {" "} sections and save it somewhere like notepad for future use.
+        </div>
+      </div>
+      
 
       {/* Remove and Change Theme */}
 
