@@ -29,7 +29,7 @@ const ThemesWorld = () => {
 
           {/* bottom Line */}
           <div className=' w-full h-[40vh]'>
-            <h1 className='text-white font-pixelify text-4xl flex justify-center items-center h-full'>
+            <h1 className='text-white font-pixelify text-2xl lg:text-4xl flex justify-center items-center h-full'>
               <span className='text-red-700'>404:</span> &nbsp;
               Boring Theme Not Found!
             </h1>
