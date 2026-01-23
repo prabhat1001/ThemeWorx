@@ -5,7 +5,7 @@ import PixelWorld from '../assets/pixelworld.jpg'
 
 const AnotherWorld = () => {
   return (
-    <div className='mt-8 w-full h-screen lg:h-[60vh] bg-green-200'>
+    <div className='mt-8 w-full h-screen lg:h-[60vh]'>
         <img src={PixelWorld} alt="" className='w-full h-full object-cover'/>
     </div>
   )
