@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/forest-bg.jpeg";
+import background from "../assets/ForestBG.jpg";
 import CentreImg from "../assets/mystical.jpeg";
 import Navbar from "../components/Navbar";
 // import LogoImg from '../../assets/logo.png';
@@ -26,13 +26,13 @@ const LandingPage = () => {
         </div>
 
         {/* background blur */}
-        <div
+        {/* <div
           className="
         z-5
         w-full lg:h-[130vh] h-screen
         absolute left-0 top-0  
-        brightness-80 xl:backdrop-blur-[4px] md:backdrop-blur-[3px] backdrop-blur-[3px]"
-        ></div>
+        brightness-80 xl:backdrop-blur-[2px] md:backdrop-blur-[px] backdrop-blur-[2px]"
+        ></div> */}
 
         {/* background image */}
         <img src={background} className="w-full h-full object-cover" />
