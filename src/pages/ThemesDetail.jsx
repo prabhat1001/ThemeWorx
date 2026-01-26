@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ThemesData } from "../data/themesData";
 import CodeBlock from "../components/CodeBlock";
+import Footer from "./Footer.jsx";
 
 const ThemesDetail = () => {
   const { slug } = useParams();
@@ -202,6 +203,8 @@ const ThemesDetail = () => {
         </div>
       </div>
 
+      {/* Footer */}
+      <Footer />
       
     </div>
   );
