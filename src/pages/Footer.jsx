@@ -38,23 +38,23 @@ const Footer = () => {
             </div>
 
             {/* Icons */}
-            <div className='border-2 border-green-600 w-[70%] md:w-full lg:w-full md:px-10 lg:px-10 p-3 flex  justify-center md:justify-start items-start md:items-center  space-x-4 text-[#929292]'>
-              <div className='pr-2'>
-                <a href='' target="_blank" rel="noopener noreferrer">
+            <div className='border-2 border-green-600 w-[70%] md:w-full lg:w-full md:px-10 lg:px-10 p-3 flex  justify-end md:justify-start items-start md:items-center  space-x-4 text-[#929292]'>
+              <div className='flex justify-center items-center'>
+                <a href='' target="_blank" rel="noopener noreferrer" className=''>
                   <IoLogoLinkedin size="2rem" />
                 </a>
               </div>
-              <div className='pr-2'>
+              <div className=''>
                 <a href='' target="_blank" rel="noopener noreferrer">
                   <FaSquareXTwitter size="2rem" />
                 </a>
               </div>
-              <div className='pr-2'>
+              <div className=''>
                 <a href='' target="_blank" rel="noopener noreferrer">
                   <FaGithub size="2rem" />
                 </a>
               </div>
-              <div className='pr-2'>
+              <div className=''>
                 <a href='' target="_blank" rel="noopener noreferrer">
                   <FaDiscord size="2rem" />
                 </a>
@@ -66,13 +66,13 @@ const Footer = () => {
           <div className=' w-full md:w-[60%] lg:w-[40%]'>
 
             {/* btn container */}
-            <div className='mt-10 px-10 md:px-8 border-2 border-purple-500 w-full h-[40%] flex justify-between md:justify-between items-center  '>
+            <div className='my-5 md:my-0 md:px-8 border-2 border-purple-500 w-full h-[40%] flex justify-around  items-center  '>
 
-              <button className='h-[4rem] w-auto lg:px-6 md:px-4 py-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-l md:text-lg font-poppins flex '>
-                Explore Worlds <span className='text-[#ffeb36] pl-2'><BsStars size="1.5rem"/></span>
+              <button className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins flex '>
+                Explore Worlds <span className='text-[#ffeb36] pl-2'><BsStars size="1.3rem"/></span>
               </button>
 
-              <button className='h-[4rem] w-auto lg:px-6 md:px-4 py-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-l md:text-lg font-poppins'>
+              <button className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins'>
                 Suggestions ?
               </button>
               
@@ -94,7 +94,7 @@ const Footer = () => {
 
             {/* Links Container */}
             <div className=' h-[60%] flex justify-around md:justify-around px-0 md:px-10 font-poppins'>
-              <div className=' border-2 border-amber-300 md:w-[30%] w-[30%] text-l md:text-lg text-[#929292] '>
+              <div className=' border-2 border-amber-300 md:w-[30%] w-[25%] text-sm md:text-lg text-[#929292] '>
                 <ul>
                   <li className='pb-4 text-[#c7c4c4]'>Quick Links</li>
                   <li><Link to='/'>Home</Link></li>
@@ -103,7 +103,7 @@ const Footer = () => {
                   <li><Link to='/contact'>Contact</Link></li>
                 </ul>
               </div>
-              <div className=' border-2 border-amber-300 md:w-[30%] w-[30%] text-l md:text-lg text-[#929292] '>
+              <div className=' border-2 border-amber-300 md:w-[30%] w-[25%] text-sm md:text-lg text-[#929292] '>
                 <ul>
                   <li className='pb-4 text-[#c7c4c4]'>Social</li>
                   <li><a href='' target="_blank" rel="noopener noreferrer">Github</a></li>
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li><a href='' target="_blank" rel="noopener noreferrer">Linked In</a></li>
                 </ul>
               </div>
-              <div className=' border-2 border-amber-300 md:w-[30%] w-[30%] text-l md:text-lg text-[#929292] '>
+              <div className=' border-2 border-amber-300 md:w-[30%] w-[25%] text-sm md:text-lg text-[#929292] '>
                 <ul>
                   <li className='pb-4 text-[#c7c4c4]'>Legal</li>
                   <li><Link to='/credits'>Credits</Link></li>
@@ -126,7 +126,7 @@ const Footer = () => {
 
       <div className=' h-[10vh] md:h-[10vh] lg:h-[20vh] border-2 border-blue-300 flex flex-col justify-center items-center mb-10'>
           <hr className="w-full h-[2px] border-0 bg-gradient-to-r from-black from-0% via-[#bdbdbd] via-50% to-black to-100%"></hr>
-          <p className='pt-4 text-[#4f4f4f] font-poppins text-[0.6rem] md:text-[1rem] lg:text-sm '>© 2026 ThemeWorx - No muggles were harmed in this build.</p>
+          <p className='pt-4 w-[70%] text-center text-[#4f4f4f] font-poppins text-xs md:text-[1rem] lg:text-sm '>© 2026 ThemeWorx - No muggles were harmed in this build.</p>
 </div>
     
 
