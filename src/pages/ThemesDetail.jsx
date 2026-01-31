@@ -128,7 +128,7 @@ const ThemesDetail = () => {
 
       {/* Remove and Change Theme */}
 
-      <div className=" w-full h-auto  lg:p-20  p-10">
+      <div className=" w-full h-auto  lg:p-20  p-10 mb-[10vh]">
         <h1 className="text-3xl font-poppins">
           {" "}
           How to Change or Remove the Theme ?
