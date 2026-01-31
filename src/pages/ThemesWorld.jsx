@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {ThemesData} from '../data/themesData.js'
 import Castle from '../assets/castle.jpeg'
+import Footer from './Footer.jsx'
 
 const ThemesWorld = () => {
   return (
@@ -28,12 +29,14 @@ const ThemesWorld = () => {
         </div>
 
           {/* bottom Line */}
-          <div className=' w-full h-[40vh]'>
+          <div className=' w-full h-[40vh] mb-[10vh]'>
             <h1 className='text-white font-pixelify text-2xl lg:text-4xl flex justify-center items-center h-full'>
               <span className='text-red-700'>404:</span> &nbsp;
               Boring Theme Not Found!
             </h1>
           </div>
+
+          <Footer/>
       
     </div>
   )
