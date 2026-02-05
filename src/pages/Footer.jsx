@@ -10,7 +10,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
-import { GoLightBulb } from "react-icons/go";
+
 
 
 
@@ -68,9 +68,11 @@ const Footer = () => {
             {/* btn container */}
             <div className='my-10 md:my-0 md:px-8 w-full h-[40%] flex justify-around  items-center  '>
 
+            <Link to='/themes'>
               <button className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins flex '>
                 Explore Worlds <span className='text-[#ffeb36] pl-2'><BsStars size="1.3rem"/></span>
               </button>
+            </Link>
 
               <button className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins'>
                 Suggestions ?
