@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/themeworxLogo.png"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
         </div>
         {/* Center Nav Links - Large screens */}
         <div className="hidden md:flex flex-1 justify-center space-x-8 items-center font-poppins  ">
-          <a href="/" className="relative text-white text-lg px-3 py-1 hover:underline">Home</a>
-          <a href="#about" className='relative text-white text-lg px-3 py-1 hover:underline'>About</a>
-          <a href="#faqs" className="relative text-white text-lg px-3 py-1 hover:underline ">FAQs</a>
+            <Link to='/' className="relative text-white text-lg px-3 py-1 hover:underline">Home</Link>
+            <Link to='/about' className='relative text-white text-lg px-3 py-1 hover:underline'>About</Link>
+            <Link to='/about/#faq' className="relative text-white text-lg px-3 py-1 hover:underline ">FAQs</Link>
         </div>
         {/* Contact Button - Right */}
         <div className="flex-1 flex justify-end items-center font-poppins">
