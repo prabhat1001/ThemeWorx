@@ -77,7 +77,7 @@ export default function AboutPage() {
 
         <div className=' w-full h-screen relative '>
           <div className=' absolute p-5 md:p-10 flex flex-col gap-5 top-1/2 -translate-y-1/2'>
-          <p className=' text-7xl md:text-8xl font-bebas font-semibold'>About <br/> ThemeWorx <span className='text-red-600'>.</span></p> 
+          <p className=' text-7xl md:text-8xl font-bebas font-semibold'><span className='font-LaBelleAurore text-4xl text-gray-600 font-normal'>About</span> <br/> ThemeWorx <span className='text-red-600'>.</span></p> 
           <p className=' text-xl md:text-lg font-poppins md:w-[40vw] '>
             ThemeWorx is a collection of VS Code themes built for developers who care about focus as much as aesthetics. Every color choice is intentional designed to reduce eye strain, improve readability, and keep distractions out of your workflow.</p>
           </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
 
         
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-16">`
           <h1 className="text-5xl font-bold mb-3 text-white">About</h1>
           <p className="text-gray-500">Learn more about ThemeWorx</p>
         </div>
