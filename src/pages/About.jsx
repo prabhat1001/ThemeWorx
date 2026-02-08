@@ -107,16 +107,17 @@ export default function AboutPage() {
         </div>
 
         {/* Header */}
-        <div className=" border-3 border-red-600 w-full h-auto mb-16 p-5 md:p-10">
-          <h1 className="text-5xl font-bold text-white mb-10 ">The Vision</h1>
-          <div className="w-full h-auto border-3 border-amber-400 flex flex-col md:flex-row items-center">
-            <img src={VisionImage} alt=""  className=" h-[40vh] lg:h-full aspect-4/5 rounded-2xl "/>
-            <div className="lg:p-10 border-3 border-green-400 mt-10 md:mt-0">
+        <div className=" w-full h-auto mb-16 p-5 md:p-10 lg:p-20">
+          <h1 className="text-5xl font-bold text-white mb-15 ">The Vision</h1>
+          <div className="w-full h-auto  flex flex-col md:flex-row items-center ">
+            <img src={VisionImage} alt=""  className=" h-full w-full md:w-[20rem] lg:w-[15rem] rounded-2xl "/>
+            <div className="md:p-5 lg:p-10  mt-10 md:mt-0 ">
               <p className="text-gray-400 leading-relaxed text-2xl md:text-lg  ">
-                <span className="text-bold">Uhh… not <span className="italic">this</span> Vision.</span><br/>
+                <span className="font-bold">Uhh… not <span className="italic">this</span> Vision.</span><br/><br/>
                 Anyway, ThemeWorx was born from a simple frustration: why do most VS Code themes force you to choose between looking good and working well?
                 <br/>
-                After years of switching between themes - too bright, too dull, too distracting, I decided to build something different. A theme that respects your eyes, your code, and your time. 
+                After years of switching between themes - too bright, too dull, too distracting, I decided to build something different. A theme that respects your eyes, your code, and your time.   
+                ThemeWorx is the result of that vision: a theme that delivers both beauty and function without compromise. 
               </p>
             </div>
           </div>
