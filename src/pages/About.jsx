@@ -125,57 +125,13 @@ export default function AboutPage() {
 
         {/* About Sections */}
         <div className="space-y-12 mb-20">
-          {/* About the Website */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 text-white">
-              The Platform
-            </h2>
-            <p className="text-gray-400 leading-relaxed">
-              This website serves as the central hub for ThemeWorx, where
-              developers can explore the theme, read documentation, and join our
-              growing community. Built with modern web technologies to be fast
-              and accessible.
-            </p>
-          </div>
 
-          {/* About the Product */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 text-white">
-              The Theme
-            </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              ThemeWorx is a complete visual experience designed for developers
-              who spend hours in their code editor. Every color has been
-              meticulously chosen to create harmony between beauty and function.
-            </p>
-            <p className="text-gray-400 leading-relaxed">
-              Born from frustration with existing themes, ThemeWorx refuses to
-              compromise. It features carefully balanced contrast ratios,
-              science-backed color choices to reduce eye strain, and consistent
-              syntax highlighting across 200+ languages.
-            </p>
-          </div>
+          <div className=" w-full h-auto mb-16 p-5 md:p-10 lg:p-20">
+          <h1 className="text-5xl font-bold text-white mb-15 ">The Creator</h1>
+          <div className="w-full h-auto  flex flex-col md:flex-row items-center ">
 
-          {/* About the Creator */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 text-white">
-              The Creator
-            </h2>
-            <div className="flex flex-col sm:flex-row gap-6 items-start">
-              {/* Profile Picture */}
-              <div className="flex-shrink-0">
-                <div className="w-24 h-24 rounded-lg bg-[#1a1a1a] border border-[#393939] overflow-hidden">
-                  <img
-                    src="https://via.placeholder.com/150"
-                    alt="Creator"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Description */}
-              <div className="flex-grow">
-                <p className="text-gray-400 leading-relaxed mb-4">
+            <div className=" md:pr-5 lg:pr-10  mt-10 md:mt-0 ">
+              <p className="text-gray-400 leading-relaxed text-2xl md:text-lg  ">
                   Hi, I’m Prabhat — a perfectly normal human being who
                   absolutely did not intend to spend hours arguing with a hex
                   color about whether it feels more “menacing” or “emotionally
@@ -184,11 +140,10 @@ export default function AboutPage() {
                   will fix everything. I notice UI inconsistencies faster than
                   social cues, have trust issues with default themes, and once
                   broke my editor just to see if I could make it prettier while
-                  doing it. ThemeWorx exists because I refuse to code in ugly
-                  environments and apparently also refuse to rest. You’re
+                  doing it. ThemeWorx exists because I refuse to code in boring environments and apparently also refuse to rest. You’re
                   witnessing the result of that lifestyle choice.
-                </p>
-                <div>
+              </p>
+              <div className="mt-5 text-gray-400 leading-relaxed text-2xl md:text-lg ">
                   <ul>
                     Fun facts about the creator:
                     <li>
@@ -204,35 +159,37 @@ export default function AboutPage() {
                       - Thinks "Just One more episode, wouldn't hurt much!"
                     </li>
                   </ul>
-                </div>
-
-                {/* Social Links */}
+              </div>
+              {/* Social Links */}
                 <div className="flex items-center gap-3 mt-10">
                   <a
                     href="#"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="GitHub"
                   >
-                    <FaGithub className="w-5 h-5" />
+                    <FaGithub className="w-8 h-8 mr-2 " />
                   </a>
                   <a
                     href="#"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="Twitter"
                   >
-                    <FaTwitter className="w-5 h-5" />
+                    <FaTwitter className="w-8 h-8 mr-2  " />
                   </a>
                   <a
                     href="#"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <FaLinkedin className="w-5 h-5" />
+                    <FaLinkedin className="w-8 h-8 mr-2 " />
                   </a>
                 </div>
-              </div>
             </div>
+
+            <img src={VisionImage} alt=""  className=" h-full w-full md:w-[20rem] lg:w-[15rem] rounded-2xl "/>
           </div>
+        </div>
+          
         </div>
 
         {/* FAQ Section */}
