@@ -107,7 +107,7 @@ export default function AboutPage() {
         </div>
 
         {/* Header */}
-        <div className=" w-full h-auto mb-16 p-5 md:p-10 lg:p-20">
+        {/* <div className=" w-full h-auto mb-16 p-5 md:p-10 lg:p-20">
           <h1 className="text-5xl font-bold text-white mb-15 ">The Vision</h1>
           <div className="w-full h-auto  flex flex-col md:flex-row items-center ">
             <img src={VisionImage} alt=""  className=" h-full w-full md:w-[20rem] lg:w-[15rem] rounded-2xl "/>
@@ -121,74 +121,88 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
+        </div> */}
+        
+        <div className="mt-20 w-full h-auto mb-16 p-5 md:px-10 lg:px-20 ">
+          <h1 className="text-5xl font-bold text-white mb-15  ">The Vision</h1>
+          <div className="w-full h-auto flex flex-col md:flex-row items-center  ">
+
+            <div className="h-full w-full md:w-[40%] lg:w-[20%]   ">
+              <img src={VisionImage} alt=""  className=" h-full w-full rounded-2xl "/>
+            </div>
+
+            <div className=" md:w-[80%] pl-0 md:pl-5 lg:pl-10  mt-10 md:mt-0   ">
+              <p className="text-gray-400 leading-relaxed text-2xl md:text-lg  ">
+                  <span className="font-bold">Uhh… not <span className="italic">this</span> Vision.</span><br/><br/>
+                Anyway, ThemeWorx was born from a simple frustration: why do most VS Code themes force you to choose between looking good and working well?
+                <br/>
+                After years of switching between themes - too bright, too dull, too distracting, I decided to build something different. A theme that respects your eyes, your code, and your time.   
+                ThemeWorx is the result of that vision: a theme that delivers both beauty and function without compromise. 
+              </p>
+              
+              
+            </div>
+            
+          </div>
+        
+          
         </div>
 
+
         {/* About Sections */}
-        <div className="space-y-12 mb-20">
 
-          <div className=" w-full h-auto mb-16 p-5 md:p-10 lg:p-20">
-          <h1 className="text-5xl font-bold text-white mb-15 ">The Creator</h1>
-          <div className="w-full h-auto  flex flex-col md:flex-row items-center ">
+          <div className=" w-full h-auto mb-16 p-5 md:px-10 lg:px-20 ">
+          <h1 className="text-5xl font-bold text-white mb-10  ">The Creator</h1>
+          <div className="w-full h-auto flex flex-col-reverse md:flex-row items-center  ">
 
-            <div className=" md:pr-5 lg:pr-10  mt-10 md:mt-0 ">
+            <div className="h-full w-full md:w-[40%] lg:w-[20%]  ">
+              <img src={VisionImage} alt=""  className=" h-full w-full rounded-2xl "/>
+            </div>
+
+            <div className=" md:w-[80%] pl-0 md:pl-5 lg:pl-10  mt-10 md:mt-0  ">
               <p className="text-gray-400 leading-relaxed text-2xl md:text-lg  ">
                   Hi, I’m Prabhat — a perfectly normal human being who
                   absolutely did not intend to spend hours arguing with a hex
                   color about whether it feels more “menacing” or “emotionally
-                  distant.” I survive on late-night fandom binges, unfinished
-                  side projects, and the dangerous belief that this next tweak
-                  will fix everything. I notice UI inconsistencies faster than
+                  distant.” I survive on late-night binges and unfinished
+                  side projects. I notice UI inconsistencies faster than
                   social cues, have trust issues with default themes, and once
                   broke my editor just to see if I could make it prettier while
-                  doing it. ThemeWorx exists because I refuse to code in boring environments and apparently also refuse to rest. You’re
-                  witnessing the result of that lifestyle choice.
+                  doing it. ThemeWorx exists because “one more episode” and “one last tweak” 
+                  are lies we keep believing. I've changed my editor themes more often than passwords. 
+
               </p>
-              <div className="mt-5 text-gray-400 leading-relaxed text-2xl md:text-lg ">
-                  <ul>
-                    Fun facts about the creator:
-                    <li>
-                      - Believes dark themes boost productivity (science
-                      pending).
-                    </li>
-                    <li>
-                      - Has rewatched movies “for inspiration” and taken zero
-                      notes.
-                    </li>
-                    <li>- Changes editor themes more often than passwords.</li>
-                    <li>
-                      - Thinks "Just One more episode, wouldn't hurt much!"
-                    </li>
-                  </ul>
-              </div>
+              
               {/* Social Links */}
-                <div className="flex items-center gap-3 mt-10">
+                <div className="flex items-center gap-3 mt-10 ">
                   <a
                     href="#"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="GitHub"
                   >
-                    <FaGithub className="w-8 h-8 mr-2 " />
+                    <FaGithub className="w-12 h-12 md:w-8 md:h-8 mr-2 " />
                   </a>
                   <a
                     href="#"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="Twitter"
                   >
-                    <FaTwitter className="w-8 h-8 mr-2  " />
+                    <FaTwitter className="w-12 h-12 md:w-8 md:h-8 mr-2  " />
                   </a>
                   <a
                     href="#"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <FaLinkedin className="w-8 h-8 mr-2 " />
+                    <FaLinkedin className="w-12 h-12 md:w-8 md:h-8 mr-2 " />
                   </a>
                 </div>
+
             </div>
 
-            <img src={VisionImage} alt=""  className=" h-full w-full md:w-[20rem] lg:w-[15rem] rounded-2xl "/>
+            
           </div>
-        </div>
+        
           
         </div>
 
