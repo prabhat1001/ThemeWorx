@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { FaChevronDown, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaChevronDown, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import HeroImage from "../assets/ThemeBG.png";
 import VisionImage from "../assets/vision.jpg"
 import Creator from "../assets/creator.jpg"
@@ -154,7 +155,7 @@ export default function AboutPage() {
 
           <div className=" w-full h-auto mb-16 p-5 md:px-10 lg:px-20 ">
           <h1 className="text-5xl font-bold text-white mb-10  ">The Creator</h1>
-          <div className="w-full h-auto flex flex-col-reverse md:flex-row items-center  ">
+          <div className="w-full h-auto flex flex-col md:flex-row items-center  ">
 
             <div className="h-full w-full md:w-[40%] lg:w-[20%]  ">
               <img src={Creator} alt=""  className=" h-full w-full rounded-2xl "/>
@@ -171,29 +172,37 @@ export default function AboutPage() {
                   broke my editor just to see if I could make it prettier while
                   doing it. ThemeWorx exists because “one more episode” and “one last tweak” 
                   are lies we keep believing. I've changed my editor themes more often than passwords. 
+                  Fueled by coffee and surrounded by fake CRT monitors from 80's control room. 
+                  If synthwave had a code editor, this would be it. ☕✨
 
               </p>
               
               {/* Social Links */}
                 <div className="flex items-center gap-3 mt-10 ">
                   <a
-                    href="#"
+                    href="https://github.com/prabhat1001"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="GitHub"
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   >
                     <FaGithub className="w-12 h-12 md:w-8 md:h-8 mr-2 " />
                   </a>
                   <a
-                    href="#"
+                    href="https://twitter.com/PrabhatSar10"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="Twitter"
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   >
-                    <FaTwitter className="w-12 h-12 md:w-8 md:h-8 mr-2  " />
+                    <FaSquareXTwitter className="w-12 h-12 md:w-8 md:h-8 mr-2  " />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/prabhatkumarsaraswat/"
                     className="text-gray-500 hover:text-white transition-colors"
                     aria-label="LinkedIn"
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedin className="w-12 h-12 md:w-8 md:h-8 mr-2 " />
                   </a>
