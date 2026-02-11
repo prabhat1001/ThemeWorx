@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { FaChevronDown, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import HeroImage from "../assets/ThemeBG.png";
 import VisionImage from "../assets/vision.jpg"
+import Creator from "../assets/creator.jpg"
 
 export default function AboutPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -156,7 +157,7 @@ export default function AboutPage() {
           <div className="w-full h-auto flex flex-col-reverse md:flex-row items-center  ">
 
             <div className="h-full w-full md:w-[40%] lg:w-[20%]  ">
-              <img src={VisionImage} alt=""  className=" h-full w-full rounded-2xl "/>
+              <img src={Creator} alt=""  className=" h-full w-full rounded-2xl "/>
             </div>
 
             <div className=" md:w-[80%] pl-0 md:pl-5 lg:pl-10  mt-10 md:mt-0  ">
