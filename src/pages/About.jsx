@@ -125,8 +125,8 @@ export default function AboutPage() {
           </div>
         </div> */}
         
-        <div className="mt-20 w-full h-auto mb-16 p-5 md:px-10 lg:px-20 ">
-          <h1 className="text-5xl font-bold text-white mb-15  ">The Vision</h1>
+        <div className="mt-20 w-full h-auto mb-16 p-5 md:px-10 lg:px-20 font-poppins ">
+          <h1 className="text-5xl font-bold text-white mb-15  ">The Vision<span className="text-red-600 pl-2">.</span></h1>
           <div className="w-full h-auto flex flex-col md:flex-row items-center  ">
 
             <div className="h-full w-full md:w-[40%] lg:w-[20%]   ">
@@ -153,8 +153,8 @@ export default function AboutPage() {
 
         {/* About Sections */}
 
-          <div className=" w-full h-auto mb-16 p-5 md:px-10 lg:px-20 ">
-          <h1 className="text-5xl font-bold text-white mb-10  ">The Creator</h1>
+          <div className=" w-full h-auto mb-16 p-5 md:px-10 lg:px-20 font-poppins ">
+          <h1 className="text-5xl font-bold text-white mb-10 ">The Creator<span className="text-red-600 pl-2">.</span></h1>
           <div className="w-full h-auto flex flex-col md:flex-row items-center  ">
 
             <div className="h-full w-full md:w-[40%] lg:w-[20%]  ">
@@ -217,8 +217,8 @@ export default function AboutPage() {
         </div>
 
         {/* FAQ Section */}
-        <div className="mb-16" id="faq">
-          <h2 className="text-3xl font-bold mb-8 text-white">FAQ</h2>
+        <div className="mb-16 p-20 font-poppins " id="faq">
+          <h1 className="text-5xl font-bold mb-8 text-white">FAQ<span className="text-red-600 pl-2">.</span></h1>
 
           <div className="space-y-3">
             {faqs.map((faq, index) => (
