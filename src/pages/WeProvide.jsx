@@ -18,24 +18,26 @@ const WeProvide = () => {
       </div>
 
       {/* Content Grid */}
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-6 ">
-        {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-2/3">
-          {features.map((feature) => (
-            <FeatureCard key={feature.number} {...feature} />
-          ))}
-        </div>
+      <div className="flex flex-col lg:flex-row gap-6 ">
+  {/* Feature Cards */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-2/3">
+    {features.map((feature) => (
+      <FeatureCard key={feature.number} {...feature} />
+    ))}
+  </div>
 
-        {/* Image Section */}
-        <div className="w-full lg:h-full md:h-[90vh] lg:w-1/3 rounded-3xl overflow-hidden border-4 border-[#e6e5e5]">
-          <img
-            src={Skelly}
-            alt="Animated skeleton coding on computer"
-            className="w-full h-full object-cover rounded-4xl p-4 "
-            loading="lazy"
-          />
-        </div>
-      </div>
+  {/* Image Section */}
+  <div className="w-full lg:w-1/3 flex items-stretch">
+    <div className="w-full rounded-3xl overflow-hidden border-4 border-[#e6e5e5]">
+      <img
+        src={Skelly}
+        alt="Animated skeleton"
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
     </section>
   );
 };
