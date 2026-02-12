@@ -5,6 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import HeroImage from "../assets/ThemeBG.png";
 import VisionImage from "../assets/vision.jpg"
 import Creator from "../assets/creator.jpg"
+import { faqs } from "../data/FAQs";
 
 export default function AboutPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -25,59 +26,7 @@ export default function AboutPage() {
     }
   }, [location]);
 
-  const faqs = [
-    {
-      question: "What is ThemeWorx?",
-      answer:
-        "ThemeWorx is a carefully crafted VS Code theme designed to provide the perfect balance between aesthetics and functionality. It's built to reduce eye strain during long coding sessions while making your code look beautiful.",
-    },
-    {
-      question: "Is ThemeWorx really free?",
-      answer:
-        "Yes! ThemeWorx is completely free and open-source. There are no hidden costs, premium versions, or subscriptions. We believe great development tools should be accessible to everyone.",
-    },
-    {
-      question: "How do I install ThemeWorx?",
-      answer:
-        "You can install ThemeWorx directly from the VS Code marketplace. Just search for 'ThemeWorx' in the Extensions panel, click install, and then select it from your color theme preferences. Alternatively, you can download it from our GitHub repository.",
-    },
-    {
-      question: "Does ThemeWorx support all programming languages?",
-      answer:
-        "Absolutely! ThemeWorx provides syntax highlighting for over 200+ programming languages and file types. Whether you're writing JavaScript, Python, Go, Rust, or any other language, ThemeWorx has you covered.",
-    },
-    {
-      question: "Can I customize ThemeWorx colors?",
-      answer:
-        "While ThemeWorx is designed to work beautifully out of the box, you can always customize specific colors through VS Code's settings.json file. We've also included multiple variants (dark, darker, darkest) to suit different preferences.",
-    },
-    {
-      question: "Does ThemeWorx work with other VS Code extensions?",
-      answer:
-        "Yes! ThemeWorx is fully compatible with all VS Code extensions. We've tested it extensively with popular extensions like GitLens, Prettier, ESLint, and many others to ensure a seamless experience.",
-    },
-    {
-      question: "How often is ThemeWorx updated?",
-      answer:
-        "We actively maintain ThemeWorx and release updates regularly. This includes improvements based on user feedback, support for new VS Code features, and refinements to color tokens for better readability.",
-    },
-    {
-      question: "Can I contribute to ThemeWorx?",
-      answer:
-        "We welcome contributions! ThemeWorx is open-source on GitHub. Whether you want to report bugs, suggest improvements, or contribute code, we'd love to have you as part of the community.",
-    },
-    {
-      question: "What makes ThemeWorx different from other themes?",
-      answer:
-        "ThemeWorx was built with three core principles: readability first, zero eye strain, and consistent token coloring. Unlike many themes that prioritize looks over function, ThemeWorx delivers both without compromise.",
-    },
-    {
-      question: "Will ThemeWorx slow down my VS Code?",
-      answer:
-        "Not at all! ThemeWorx is optimized for performance. It's a lightweight theme that loads instantly and has zero impact on your editor's performance, even in large projects.",
-    },
-  ];
-
+  
   return (
     <div className="min-h-screen bg-black text-white">
       <div className="w-full">
@@ -125,7 +74,7 @@ export default function AboutPage() {
           </div>
         </div> */}
         
-        <div className="mt-20 w-full h-auto mb-16 p-5 md:px-10 lg:px-20 font-poppins ">
+        <div className="mt-20 w-full h-screen p-5 md:px-10 lg:px-20 font-poppins ">
           <h1 className="text-5xl font-bold text-white mb-15  ">The Vision<span className="text-red-600 pl-2">.</span></h1>
           <div className="w-full h-auto flex flex-col md:flex-row items-center  ">
 
@@ -153,7 +102,7 @@ export default function AboutPage() {
 
         {/* About Sections */}
 
-          <div className=" w-full h-auto mb-16 p-5 md:px-10 lg:px-20 font-poppins ">
+          <div className=" w-full h-screen p-5 md:px-10 lg:px-20 font-poppins ">
           <h1 className="text-5xl font-bold text-white mb-10 ">The Creator<span className="text-red-600 pl-2">.</span></h1>
           <div className="w-full h-auto flex flex-col md:flex-row items-center  ">
 
