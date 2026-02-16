@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import HarryPotter from '../assets/hp.jfif'
-import StarWars from '../assets/starwars.jfif'
-import Ghibili from '../assets/ghibili.jfif'
+import HarryPotter from '../assets/hp.jpg'
+import StarWars from '../assets/Darth.jpg'
+import Ghibili from '../assets/ghibili.jpg'
 
 const ExploreThemes = () => {
   return (
@@ -18,7 +18,7 @@ const ExploreThemes = () => {
         </p>
       </div>
 
-      {/* cards grid */}
+      {/* cards grid */} 
         <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 w-[80vw] lg:h-[60vh] md:h-[120vh] h-[150vh]  ">
             {/* Theme cards go here */}
             <div className=' border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
