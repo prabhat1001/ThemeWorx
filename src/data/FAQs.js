@@ -2,51 +2,30 @@ export const faqs = [
     {
       question: "What is ThemeWorx?",
       answer:
-        "ThemeWorx is a carefully crafted VS Code theme designed to provide the perfect balance between aesthetics and functionality. It's built to reduce eye strain during long coding sessions while making your code look beautiful.",
-    },
+        "ThemeWorx is a VS Code theme built around vibes people already love — anime, movies, series, and pop-culture moods — translated into something you can code in every day. It’s not trying to be scientific. It’s trying to feel right."},
     {
-      question: "Is ThemeWorx really free?",
+      question: "Why another VS Code theme?",
       answer:
-        "Yes! ThemeWorx is completely free and open-source. There are no hidden costs, premium versions, or subscriptions. We believe great development tools should be accessible to everyone.",
-    },
+        "Because most themes fall into two buckets: technically fine but boring, or visually cool but annoying to use long-term. ThemeWorx exists to sit somewhere in between — familiar, expressive, and still practical enough that you won’t want to switch after two days."    },
     {
-      question: "How do I install ThemeWorx?",
+      question: "Is ThemeWorx “better” than other themes?",
       answer:
-        "You can install ThemeWorx directly from the VS Code marketplace. Just search for 'ThemeWorx' in the Extensions panel, click install, and then select it from your color theme preferences. Alternatively, you can download it from our GitHub repository.",
-    },
-    {
-      question: "Does ThemeWorx support all programming languages?",
-      answer:
-        "Absolutely! ThemeWorx provides syntax highlighting for over 200+ programming languages and file types. Whether you're writing JavaScript, Python, Go, Rust, or any other language, ThemeWorx has you covered.",
+        "No — and that’s the honest answer. Themes are subjective. ThemeWorx is for people who like coding with a mood, enjoy fandom aesthetics, and for the nerds who want their editor to reflect their taste. If it clicks, it clicks. If it doesn’t, that’s completely fine.",
     },
     {
       question: "Can I customize ThemeWorx colors?",
       answer:
-        "While ThemeWorx is designed to work beautifully out of the box, you can always customize specific colors through VS Code's settings.json file. We've also included multiple variants (dark, darker, darkest) to suit different preferences.",
+        "While ThemeWorx is designed to work beautifully out of the box, you can always customize specific colors through VS Code's settings.json file. We've also included multiple variants to suit different preferences.",
     },
     {
-      question: "Does ThemeWorx work with other VS Code extensions?",
+      question: "Can I request a fandom or vibe?",
       answer:
-        "Yes! ThemeWorx is fully compatible with all VS Code extensions. We've tested it extensively with popular extensions like GitLens, Prettier, ESLint, and many others to ensure a seamless experience.",
-    },
-    {
-      question: "How often is ThemeWorx updated?",
-      answer:
-        "We actively maintain ThemeWorx and release updates regularly. This includes improvements based on user feedback, support for new VS Code features, and refinements to color tokens for better readability.",
+        "Yes — and you should. ThemeWorx grows from shared taste, not trends, so if there’s a world, mood, or aesthetic that genuinely means something to you, suggest it. The best themes don’t come from “what’s popular,” they come from what people actually connect with. If your idea translates well into code and fits the overall identity, it might just become the next vibe someone else didn’t know they needed.",
     },
     {
       question: "Can I contribute to ThemeWorx?",
       answer:
-        "We welcome contributions! ThemeWorx is open-source on GitHub. Whether you want to report bugs, suggest improvements, or contribute code, we'd love to have you as part of the community.",
+        "Yes — and that’s honestly one of the best ways to make it better. If you have ideas, tweaks, improvements, or even a vibe you think deserves to exist, your input matters. Whether it’s feedback, pull requests, or thoughtful suggestions, contributions help shape ThemeWorx into something built by the community, not just for it. If you care enough to contribute, you’re already the kind of person this project was made for.",
     },
-    {
-      question: "What makes ThemeWorx different from other themes?",
-      answer:
-        "ThemeWorx was built with three core principles: readability first, zero eye strain, and consistent token coloring. Unlike many themes that prioritize looks over function, ThemeWorx delivers both without compromise.",
-    },
-    {
-      question: "Will ThemeWorx slow down my VS Code?",
-      answer:
-        "Not at all! ThemeWorx is optimized for performance. It's a lightweight theme that loads instantly and has zero impact on your editor's performance, even in large projects.",
-    },
+    
   ];
