@@ -6,6 +6,7 @@ import HeroImage from "../assets/ThemeBG.png";
 import VisionImage from "../assets/vision.jpg";
 import Creator from "../assets/creator.jpg";
 import { faqs } from "../data/FAQs";
+import Form from "../components/Form";
 
 export default function AboutPage() {
   const [openFaq, setOpenFaq] = useState(0); // 0 = first FAQ open by default
@@ -173,7 +174,7 @@ export default function AboutPage() {
         </div>
 
         {/* FAQ Section */}
-        <div className=" px-5 md:px-20 font-poppins " id="faq">
+        <div className=" px-5 md:px-20 font-poppins border-4 border-amber-300 " id="faq">
           <h1 className="text-5xl font-bold my-2 text-white">
             FAQ<span className="text-red-600 pl-2">.</span>
           </h1>
@@ -225,6 +226,8 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+
+        <div className=" px-5 md:px-20 font-poppins border-4 border-amber-300 mt-20"><Form/></div>
 
         {/* CTA Section */}
         <div className="border border-[#393939] bg-[#141414] rounded-lg p-12 text-center">
