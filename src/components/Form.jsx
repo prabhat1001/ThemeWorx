@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 
+
 const TYPES = {
   suggest:  { label: "Suggest a Theme",  icon: "✦", placeholder: "What fandom or vibe are you thinking of? What makes it special?", btnLabel: "Share the Idea"  },
   question: { label: "Ask a Question",   icon: "◎", placeholder: "What would you like to know?",                                    btnLabel: "Ask Away"        },
@@ -57,7 +58,7 @@ export default function ThemeWorxForm() {
 
       {/* Page */}
       <div className="w-full min-w-72">
-
+        
 
         {/* Title */}
         <h1 className="text-5xl font-bold mb-3 text-white leading-tight font-poppins">
@@ -71,7 +72,7 @@ export default function ThemeWorxForm() {
         </p>
 
         {/* Card */}
-        <div className="bg-white/[0.03] border-4 border-[#504f4f] rounded-2xl p-10 backdrop-blur-xl">
+        <div className="bg-white/[0.03] border-4 border-[#504f4f] rounded-4xl p-10 ">
 
           {status === "success" ? (
 
@@ -89,13 +90,13 @@ export default function ThemeWorxForm() {
           ) : (
             <>
               {/* Label */}
-              <p className="text-[10px] uppercase tracking-widest text-[#99989e]/40 mb-3"
+              <p className="text-[10px] uppercase tracking-widest text-[#99989e]/80 mb-3"
                 style={{ fontFamily: "'Syne', sans-serif" }}>
                 What are you sending?
               </p>
 
               {/* Pills */}
-              <div className="grid grid-cols-2 gap-2 mb-7">
+              <div className="grid grid-cols-1 md:grid-cols-2  gap-2 mb-7">
                 {Object.keys(TYPES).map(k => (
                   <button key={k} type="button" onClick={() => handleSelect(k)}
                     className={`flex items-center justify-center gap-2 px-4 py-3 rounded-full border text-sm font-medium transition-all duration-200 cursor-pointer
@@ -126,7 +127,7 @@ export default function ThemeWorxForm() {
               {/* Optional fields */}
               <div className="grid grid-cols-2 gap-4 mb-7">
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] uppercase tracking-widest text-[#99989e]/40"
+                  <label className="text-[10px] uppercase tracking-widest text-[#99989e]/80"
                     style={{ fontFamily: "'Syne', sans-serif" }}>
                     Email
                   </label>
@@ -138,7 +139,7 @@ export default function ThemeWorxForm() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] uppercase tracking-widest text-[#99989e]/40"
+                  <label className="text-[10px] uppercase tracking-widest text-[#99989e]/80"
                     style={{ fontFamily: "'Syne', sans-serif" }}>
                     GitHub
                   </label>
