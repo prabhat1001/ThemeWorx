@@ -7,6 +7,8 @@ import VisionImage from "../assets/vision.jpg";
 import Creator from "../assets/creator.jpg";
 import { faqs } from "../data/FAQs";
 import Form from "../components/Form";
+import Footer from './Footer.jsx'
+import Branding from '../assets/EndBranding.png'
 
 export default function AboutPage() {
   const [openFaq, setOpenFaq] = useState(0); // 0 = first FAQ open by default
@@ -174,7 +176,7 @@ export default function AboutPage() {
         </div>
 
         {/* FAQ Section */}
-        <div className=" px-5 md:px-20 font-poppins border-4 border-amber-300 " id="faq">
+        <div className=" px-5 md:px-20 font-poppins py-8" id="faq">
           <h1 className="text-5xl font-bold my-2 text-white">
             FAQ<span className="text-red-600 pl-2">.</span>
           </h1>
@@ -227,20 +229,12 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className=" px-5 md:px-20 font-poppins border-4 border-amber-300 mt-20"><Form/></div>
+        <div className=" px-5 md:px-20 font-poppins my-10 lg:my-20"><Form/></div>
 
-        {/* CTA Section */}
-        <div className="border border-[#393939] bg-[#141414] rounded-lg p-12 text-center">
-          <h2 className="text-3xl font-bold mb-3 text-white">
-            Ready to Try ThemeWorx?
-          </h2>
-          <p className="text-gray-400 mb-6">
-            Download and install it free from the VS Code marketplace.
-          </p>
-          <button className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition-colors">
-            Get ThemeWorx
-          </button>
-        </div>
+        {/* Bottom Naming */}
+                <div className='w-full h-auto flex justify-center items-center overflow-hidden '>
+                  <img src={Branding} alt="Branding" className='w-full px-5 mt-[2rem] object-contain' />
+                </div>
       </div>
     </div>
   );
