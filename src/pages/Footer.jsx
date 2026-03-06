@@ -40,22 +40,22 @@ const Footer = () => {
             {/* Icons */}
             <div className=' w-[70%] md:w-full lg:w-full md:px-10 lg:px-10 p-3 flex  justify-end md:justify-start items-start md:items-center  space-x-4 text-[#929292]'>
               <div className='flex justify-center items-center'>
-                <a href='' target="_blank" rel="noopener noreferrer" className=''>
+                <a href='' target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <IoLogoLinkedin size="2rem" />
                 </a>
               </div>
               <div className=''>
-                <a href='' target="_blank" rel="noopener noreferrer">
+                <a href='' target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
                   <FaSquareXTwitter size="2rem" />
                 </a>
               </div>
               <div className=''>
-                <a href='' target="_blank" rel="noopener noreferrer">
+                <a href='' target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <FaGithub size="2rem" />
                 </a>
               </div>
               <div className=''>
-                <a href='' target="_blank" rel="noopener noreferrer">
+                <a href='' target="_blank" rel="noopener noreferrer" aria-label="Discord">
                   <FaDiscord size="2rem" />
                 </a>
               </div>
