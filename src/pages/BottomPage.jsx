@@ -20,6 +20,7 @@ const BottomPage = () => {
               {/* <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:h-[25vw] md:h-[35vw] aspect-video w-[90vw]  rounded-3xl shadow-xl/30 flex ">
                 <img
                   src={Jedi}
+                  alt="Jedi themed coding banner"
                   className="w-full h-full object-cover rounded-3xl contrast-125 brightness-75 "
                 />
                 <div className='absolute flex flex-col items-end pr-[5vw] justify-center w-full h-full bg-gradient-to-l from-black from-10% to-transparent to-90% rounded-3xl'>

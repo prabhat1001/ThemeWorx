@@ -12,7 +12,7 @@ const Navbar = () => {
           {/* <div className="text-white font-caesar text-3xl tracking-widest">
             themeWorx.
           </div> */}
-          <img src={Logo} alt="" className=" h-[4rem] lg:h-[5rem]" />
+          <img src={Logo} alt="Website Logo" className=" h-[4rem] lg:h-[5rem]" />
         </div>
         {/* Center Nav Links - Large screens */}
         <div className="hidden md:flex flex-1 justify-center space-x-8 items-center font-poppins  ">

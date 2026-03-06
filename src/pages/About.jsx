@@ -54,7 +54,7 @@ export default function AboutPage() {
 
           <img
             src={HeroImage}
-            alt=""
+            alt="Background Image "
             className="w-full h-full object-cover md:object-cover right-0"
           />
         </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <div className="h-full w-full md:w-[40%] lg:w-[20%]   ">
               <img
                 src={VisionImage}
-                alt=""
+                alt="Marvel Vision"
                 className=" h-full w-full rounded-2xl "
               />
             </div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="h-full w-full md:w-[40%] lg:w-[20%]  ">
               <img
                 src={Creator}
-                alt=""
+                alt="Creator Pic"
                 className=" h-full w-full rounded-2xl "
               />
             </div>

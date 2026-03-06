@@ -18,7 +18,7 @@ const ThemesDetail = () => {
         <div className=" relative w-full h-screen  flex flex-col overflow-hidden">
           <img
             src={theme.bannerImg}
-            alt=""
+            alt="theme background"
             className="w-full h-full object-cover"
           />
           <div className=" absolute bottom-0 w-full h-[60vh] bg-gradient-to-t from-black from-10% to-transparent to-80%"></div>

@@ -27,7 +27,7 @@ const Footer = () => {
 
             {/* Logo */}
             <div className=' p-3 w-[30%] md:w-full lg:w-full md:p-10 lg:p-10'>
-              <img src={Logo} alt="" className=' w-[4rem] md:w-[5rem] lg:w-[5rem]' />
+              <img src={Logo} alt="Logo" className=' w-[4rem] md:w-[5rem] lg:w-[5rem]' />
             </div>
 
             {/* Description */}
