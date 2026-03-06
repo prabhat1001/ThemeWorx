@@ -1,6 +1,6 @@
 import React from "react";
-import background from "../assets/ForestBG.jpg";
-import CentreImg from "../assets/mystical.jpeg";
+import background from "../assets/ForestBG.webp";
+import CentreImg from "../assets/mystical.webp";
 import Navbar from "../components/Navbar";
 // import LogoImg from '../../assets/logo.png';
 
@@ -35,7 +35,7 @@ const LandingPage = () => {
         ></div> */}
 
         {/* background image */}
-        <img src={background} alt="Forest background" className="w-full h-full object-cover" />
+        <img src={background} alt="Forest background" className="w-full h-full object-cover" fetchPriority="high"/>
       </div>
 
       {/* Middle Img */}
@@ -44,6 +44,8 @@ const LandingPage = () => {
           src={CentreImg}
           alt="Mystical landscape preview"
           className="w-full h-full object-cover rounded-3xl contrast-125 brightness-75 "
+          fetchpriority="high"
+         
         />
       </div>
 
