@@ -74,9 +74,11 @@ const Footer = () => {
               </button>
             </Link>
 
-              <button className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins'>
+              <Link
+                to="/about#feedback" 
+                className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins'>
                 Suggestions ?
-              </button>
+              </Link>
               
 
               {/* <div className=''>

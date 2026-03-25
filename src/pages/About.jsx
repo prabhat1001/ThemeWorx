@@ -20,14 +20,15 @@ export default function AboutPage() {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if URL has #faq hash
-    if (location.hash === "#faq") {
-      const element = document.getElementById("faq");
+  if (location.hash === "#faq" || location.hash === "#feedback") {
+    const element = document.getElementById(location.hash.replace("#", ""));
+    setTimeout(() => {
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    }
-  }, [location]);
+    }, 100);
+  }
+}, [location]);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -229,7 +230,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className=" px-5 md:px-20 font-poppins my-10 lg:my-20"><Form/></div>
+        <div className=" px-5 md:px-20 font-poppins my-10 lg:my-20" id="feedback"><Form/></div>
 
         {/* Bottom Naming */}
                 <div className='w-full h-auto flex justify-center items-center overflow-hidden '>
