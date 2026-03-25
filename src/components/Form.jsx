@@ -1,4 +1,6 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import Lottie from 'lottie-react';
+import animationData from "../lottie/tick.json";
 
 
 const TYPES = {
@@ -8,7 +10,11 @@ const TYPES = {
   feedback: { label: "General Feedback", icon: "◈", placeholder: "What feels good? What feels off?",                                btnLabel: "Drop the Vibe"   },
 };
 
-const WEB3FORMS_KEY = "XYZ";
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+
+const TOTAL = 10; // seconds for success message countdown
+
 
 export default function ThemeWorxForm() {
   const [type,   setType]   = useState("suggest");
@@ -17,10 +23,31 @@ export default function ThemeWorxForm() {
   const ghRef               = useRef("");
   const [status, setStatus] = useState("idle");
   const [taErr,  setTaErr]  = useState(false);
-
+  const [countdown, setCountdown] = useState(10);
+  const timerRef = useRef(null);
   const cfg       = TYPES[type];
   const isSending = status === "sending";
   const isErr     = status === "error";
+  
+  useEffect(() => {
+  if (status === "success") {
+    setCountdown(TOTAL);
+    let c = TOTAL;
+    timerRef.current = setInterval(() => {
+      c -= 1;
+      setCountdown(c);
+      if (c <= 0) {
+        clearInterval(timerRef.current);
+        setStatus("idle");
+        setType("suggest");
+        setMsg("");
+        setEmail("");
+        ghRef.current = "";
+      }
+    }, 1000);
+  }
+  return () => clearInterval(timerRef.current);
+}, [status]);
 
   const handleSelect = (val) => { setType(val); setMsg(""); };
 
@@ -75,19 +102,22 @@ export default function ThemeWorxForm() {
         <div className="bg-white/[0.03] border-4 border-[#504f4f] rounded-4xl p-10 ">
 
           {status === "success" ? (
-
-            <div className="text-center py-6">
-              <div className="text-4xl text-red-600 mb-4">✦</div>
-              <h3 className="text-xl font-bold text-[#99989e] mb-2"
-                style={{ fontFamily: "'Poppins', sans-serif" }}>
-                Dropped. We got it.
-              </h3>
-              <p className="text-[#99989e]/50 text-sm leading-relaxed">
-                Thanks for contributing to the vibe.<br />We read everything.
-              </p>
-            </div>
-
-          ) : (
+  <div className="text-center flex flex-col justify-center items-center">
+    <Lottie
+      animationData={animationData}
+      loop={true}
+      autoplay={true}
+      style={{ height: 300, width: 300 }}
+    />
+    <h3 className="text-xl font-bold text-[#99989e] mb-2"
+      style={{ fontFamily: "'Poppins', sans-serif" }}>
+      Dropped. We got it.
+    </h3>
+    <p className="text-[#99989e]/50 text-sm leading-relaxed">
+      Thanks for contributing to the vibe.<br />We read everything.
+    </p>
+  </div>
+) : (
             <>
               {/* Label */}
               <p className="text-[10px] uppercase tracking-widest text-[#99989e]/80 mb-3"
