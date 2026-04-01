@@ -16,9 +16,9 @@ const Navbar = () => {
         </div>
         {/* Center Nav Links - Large screens */}
         <div className="hidden md:flex flex-1 justify-center space-x-8 items-center font-poppins  ">
-            <Link to='/' className="relative text-white text-lg px-3 py-1 hover:underline">Home</Link>
-            <Link to='/about' className='relative text-white text-lg px-3 py-1 hover:underline'>About</Link>
-            <Link to='/about/#faq' className="relative text-white text-lg px-3 py-1 hover:underline ">FAQs</Link>
+            <Link to='/' className="relative text-white text-lg px-3 py-1 ">Home</Link>
+            <Link to='/about' className='relative text-white text-lg px-3 py-1 '>About</Link>
+            <Link to='/about/#faq' className="relative text-white text-lg px-3 py-1  ">FAQs</Link>
         </div>
         {/* Contact Button - Right */}
         <div className="flex-1 flex justify-end items-center font-poppins">
