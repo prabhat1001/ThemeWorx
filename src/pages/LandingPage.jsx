@@ -25,17 +25,14 @@ const LandingPage = () => {
           </div>
         </div>
 
-        {/* background blur */}
-        {/* <div
-          className="
-        z-5
-        w-full lg:h-[130vh] h-screen
-        absolute left-0 top-0  
-        brightness-80 xl:backdrop-blur-[2px] md:backdrop-blur-[px] backdrop-blur-[2px]"
-        ></div> */}
-
         {/* background image */}
-        <img src={background} alt="Forest background" className="w-full h-full object-cover" fetchPriority="high"/>
+        <img 
+          src={background} 
+          alt="Forest background" 
+          className="w-full h-full object-cover" 
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"/>
       </div>
 
       {/* Middle Img */}
@@ -44,7 +41,9 @@ const LandingPage = () => {
           src={CentreImg}
           alt="Mystical landscape preview"
           className="w-full h-full object-cover rounded-3xl contrast-125 brightness-75 "
-          fetchpriority="high"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
          
         />
       </div>
