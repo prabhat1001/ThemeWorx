@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import HarryPotter from '../assets/hp.jpg'
-import StarWars from '../assets/Darth.jpg'
-import Ghibili from '../assets/ghibili.jpg'
+import HarryPotter from '../assets/hp.webp'
+import StarWars from '../assets/Darth.webp'
+import Ghibili from '../assets/ghibili.webp'
 
 const ExploreThemes = () => {
   return (
