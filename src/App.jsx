@@ -1,25 +1,27 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 import './index.css'
-import HomePage from './pages/HomePage'
-import ThemesWorld from './pages/ThemesWorld'
-import ThemesDetail from './pages/ThemesDetail'
 import ScrollToTop from './components/ScrollToTop';
-import About from './pages/About';
+
+const HomePage = lazy(() => import('./pages/HomePage'))
+const ThemesWorld = lazy(() => import('./pages/ThemesWorld'))
+const ThemesDetail = lazy(() => import('./pages/ThemesDetail'))
+const About = lazy(() => import('./pages/About'))
 
 const App = () => {
   const location = useLocation();
 
   return (
     <>
-      <ScrollToTop /> 
-      
-      <Routes location={location} key={location.pathname}>
-      <Route path='/' element={<HomePage />} />
-      <Route path='/themes' element={<ThemesWorld />} />
-      <Route path="/themes/:slug" element={<ThemesDetail />} />
-      <Route path='/about' element={<About />} />
-      </Routes>
+      <ScrollToTop />
+      <Suspense fallback={null}>
+        <Routes location={location} key={location.pathname}>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/themes' element={<ThemesWorld />} />
+          <Route path="/themes/:slug" element={<ThemesDetail />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </Suspense>
     </>
   )
 }
