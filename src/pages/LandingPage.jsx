@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/ForestBG.webp";
+import background from "../assets/dungeon.jpg";
 import CentreImg from "../assets/mystical.webp";
 import Navbar from "../components/Navbar";
 // import LogoImg from '../../assets/logo.png';
@@ -11,17 +11,17 @@ const LandingPage = () => {
     <div className="max-w-[100vw] relative overflow-hidden ">
 
       {/* Landing 1 */}
-      <div className=" w-[100vw] lg:h-[130vh] h-screen">
+      <div className=" w-[100vw] lg:h-[130vh] h-screen ">
 
         <div className="absolute z-20 w-full"><Navbar /></div>
 
         {/* Hero title Section */}
         <div>
           <div className="  absolute z-10 mt-[30vh] w-full flex flex-col items-center px-4">
-            <h1 className="text-white font-poppins font-semibold lg:text-7xl md:text-5xl text-5xl text-center leading-tight drop-shadow-lg"> Craft Your <br /> Coding <span className="text-[#a6fa7f] font-semibold">Realm.</span></h1>
+            <h1 className="text-white font-playfair font-semibold lg:text-7xl md:text-5xl text-5xl text-center leading-tight drop-shadow-lg"> Cr<span className="italic">a</span>ft Your <br /> Coding <span className=" text-white font-semibold">Re<span className="italic">a</span>lm.</span></h1>
             <p className="text-white font-poppins lg:text-lg md:text-md text-sm text-center mt-4 max-w-2xl drop-shadow-md">
               Bring your favorite worlds to life with themes inspired by<br/>
-              movies, anime, and games. <br/><span className="text-[#a6fa7f] font-semibold"> Code your way!</span></p>
+              movies, anime, and games. <br/><span className="text-[#ffa600]"> Code your way!</span></p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ const LandingPage = () => {
         <img 
           src={background} 
           alt="Forest background" 
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-cover brightness-50 " 
           fetchPriority="high"
           loading="eager"
           decoding="sync"/>
