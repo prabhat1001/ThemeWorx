@@ -23,11 +23,11 @@ const Navbar = () => {
         {/* Contact Button - Right */}
         <div className="flex-1 flex justify-end items-center font-poppins">
           <div className="hidden md:block">
-            <a href="#contact">
-              <button className="bg-[#294f44] text-white px-4 py-2 rounded-lg hover:bg-[#73a37b]">
+            <Link to="/about/#feedback">
+              <button className="relative text-white px-4 py-2 rounded-3xl border-2 border-white/20 backdrop-blur-xs bg-white/10 shadow-lg hover:bg-white/20 transition-all duration-100">
                 Contact
               </button>
-            </a>
+            </Link>
           </div>
           {/* Hamburger - Small screens */}
           <div className="md:hidden">
@@ -75,14 +75,14 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <a href="#home" className="text-white text-xl" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="#about" className="text-white text-xl" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#faqs" className="text-white text-xl" onClick={() => setMenuOpen(false)}>FAQs</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>
+          <Link to='/' className="text-white text-xl" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to='/about' className="text-white text-xl" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to='/about/#faq' className="text-white text-xl" onClick={() => setMenuOpen(false)}>FAQs</Link>
+          <Link to='/about/#feedback' onClick={() => setMenuOpen(false)}>
             <button className="bg-[#294f44] text-white px-4 py-2 rounded-4xl hover:bg-[#73a37b]">
               Contact
             </button>
-          </a>
+          </Link>
         </div>
       )}
     </nav>
