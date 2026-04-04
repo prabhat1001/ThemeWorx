@@ -4,6 +4,7 @@ import Logo from "../assets/themeworxLogo.png"
 import { Link } from 'react-router-dom';
 
 
+
 // icons
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -40,17 +41,17 @@ const Footer = () => {
             {/* Icons */}
             <div className=' w-[70%] md:w-full lg:w-full md:px-10 lg:px-10 p-3 flex  justify-end md:justify-start items-start md:items-center  space-x-4 text-[#929292]'>
               <div className='flex justify-center items-center'>
-                <a href='' target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href='https://www.linkedin.com/in/prabhatkumarsaraswat' target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <IoLogoLinkedin size="2rem" />
                 </a>
               </div>
               <div className=''>
-                <a href='' target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <a href='https://twitter.com/PrabhatSar10' target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
                   <FaSquareXTwitter size="2rem" />
                 </a>
               </div>
               <div className=''>
-                <a href='' target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href='https://github.com/prabhat1001' target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <FaGithub size="2rem" />
                 </a>
               </div>
@@ -103,23 +104,22 @@ const Footer = () => {
                   <li className='pb-4 text-[#c7c4c4]'>Quick Links</li>
                   <li><Link to='/'>Home</Link></li>
                   <li><Link to='/about'>About</Link></li>
-                  <li><Link to='/faq'>FAQ</Link></li>
-                  <li><Link to='/contact'>Contact</Link></li>
+                  <li><Link to="/about#faq">FAQ</Link></li>
                 </ul>
               </div>
               <div className='  md:w-[30%] w-[25%] text-sm md:text-lg text-[#929292] '>
                 <ul>
                   <li className='pb-4 text-[#c7c4c4]'>Social</li>
-                  <li><a href='' target="_blank" rel="noopener noreferrer">Github</a></li>
-                  <li><a href='' target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                  <li><a href='' target="_blank" rel="noopener noreferrer">Linked In</a></li>
+                  <li><a href='https://github.com/prabhat1001' target="_blank" rel="noopener noreferrer">Github</a></li>
+                  <li><a href='https://twitter.com/PrabhatSar10' target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                  <li><a href='https://www.linkedin.com/in/prabhatkumarsaraswat' target="_blank" rel="noopener noreferrer">Linked In</a></li>
                 </ul>
               </div>
               <div className=' md:w-[30%] w-[25%] text-sm md:text-lg text-[#929292] '>
                 <ul>
                   <li className='pb-4 text-[#c7c4c4]'>Legal</li>
                   <li><Link to='/credits'>Credits</Link></li>
-                  <li><Link to='/desclaimer'>Desclaimer</Link></li>
+                  <li><Link to='/disclaimer'>Disclaimer</Link></li>
                 </ul>
               </div>
             </div>
