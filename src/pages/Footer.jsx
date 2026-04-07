@@ -55,11 +55,6 @@ const Footer = () => {
                   <FaGithub size="2rem" />
                 </a>
               </div>
-              <div className=''>
-                <a href='' target="_blank" rel="noopener noreferrer" aria-label="Discord">
-                  <FaDiscord size="2rem" />
-                </a>
-              </div>
             </div>
           </div>
 
@@ -80,21 +75,6 @@ const Footer = () => {
                 className=' p-4 lg:px-6 md:px-4 border-3 border-[#393939] bg-[#141414] cursor-pointer hover:bg-[#1d1d1d] hover:border-[#575757] rounded-2xl text-sm md:text-lg font-poppins'>
                 Suggestions ?
               </Link>
-              
-
-              {/* <div className=''>
-                <Link to='/feedback'>
-                  <button className='px-8 py-4 bg-[#141414] border-3 border-[#393939] rounded-2xl text-white text-lg hover:border-gray-400 transition-colors'>
-                    Suggestions ?
-                  </button>
-                </Link>
-      
-                <Link to='/themes'>
-                  <button className='px-8 py-4 bg-[#141414] border-3 border-[#393939] rounded-2xl text-white text-lg hover:border-gray-400 transition-colors'>
-                    Explore Worlds ✨
-                  </button>
-                </Link>
-              </div> */}
             </div>
 
             {/* Links Container */}
@@ -130,7 +110,7 @@ const Footer = () => {
 
       <div className=' h-[10vh] md:h-[10vh] lg:h-[20vh] flex flex-col justify-center items-center mb-10'>
           <hr className="w-full h-[2px] border-0 bg-gradient-to-r from-black from-0% via-[#bdbdbd] via-50% to-black to-100%"></hr>
-          <p className='pt-4 w-[70%] text-center text-[#4f4f4f] font-poppins text-xs md:text-[1rem] lg:text-sm '>© 2026 ThemeWorx - No muggles were harmed in this build.</p>
+          <p className='pt-4 w-[70%] text-center text-[#d8d8d8] font-poppins text-xs md:text-[1rem] lg:text-sm '>© 2026 ThemeWorx - No muggles were harmed in this build.</p>
 </div>
     
 
