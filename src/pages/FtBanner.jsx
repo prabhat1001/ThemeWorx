@@ -1,7 +1,5 @@
 import React from 'react'
-import Land from '../assets/ground.jpg'
-import Bar from '../assets/westworld.jpg'
-import SpaceShip from '../assets/space-shuttle.jpg'
+import SpaceShip from '../assets/space-shuttle.webp'
 
 const FtBanner = () => {
   return (
