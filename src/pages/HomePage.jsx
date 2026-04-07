@@ -13,12 +13,16 @@ const HomePage = () => {
   return (
     <div>
       <LandingPage />
+      <main>  
+        <Suspense fallback={null}>
+          <WeProvide />
+          <ExploreThemes />
+          <AnotherWorld />
+          <BottomPage />
+          <FtBanner />
+        </Suspense>
+      </main>
       <Suspense fallback={null}>
-        <WeProvide />
-        <ExploreThemes />
-        <AnotherWorld />
-        <BottomPage />
-        <FtBanner />
         <Footer />
       </Suspense>
     </div>
