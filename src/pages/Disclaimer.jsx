@@ -37,7 +37,7 @@ const Disclaimer = () => {
 
           {/* Scrollable body — only this div scrolls */}
           <div
-            className='disclaimer-scroll flex-1 overflow-y-auto px-8 md:px-10 py-6 font-poppins space-y-5 text-white/75 text-sm leading-relaxed'
+            className='disclaimer-scroll flex-1 overflow-y-auto px-8 md:px-10 py-6 font-playfair italic tracking-wide space-y-5 text-gray-300 text-sm leading-relaxed'
             style={{
               scrollbarWidth: 'thin',
               scrollbarColor: 'rgba(255,255,255,0.25) transparent',
@@ -75,7 +75,7 @@ const Disclaimer = () => {
             <p>
                 We sincerely respect the work and rights of all creators. Any resemblance or inspiration is unintentional and meant only to appreciate creative excellence while helping developers create a better coding experience.
             </p>
-            <p>
+            <p className='font-playfair italic text-[#a9edf1]'>
                 — Team ThemeWorx
             </p>
           </div>
