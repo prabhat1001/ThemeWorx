@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/dungeon.jpg";
+import background from "../assets/dungeon.webp";
 import CentreImg from "../assets/mystical.webp";
 import Navbar from "../components/Navbar";
 // import LogoImg from '../../assets/logo.png';
@@ -60,7 +60,7 @@ const LandingPage = () => {
       <div className=" font-LaBelleAurore lg:text-4xl md:text-4xl text-3xl text-center">
         " Because it's Cool "
       </div>
-      <div className=" mt-6 font-poppins text-md text-center max-w-3xl text-[#929292]">
+      <div className=" mt-6 font-poppins text-md text-center max-w-3xl text-[#626262]">
         Turn your coding hours into an adventure. <br/> Escape the boring. Build magic.
       </div>
     </div>
