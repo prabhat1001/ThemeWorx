@@ -8,6 +8,7 @@ const InfiniteLogo = () => {
     <Marquee 
     speed={50}
     gradient={true}
+    pauseOnHover={false}
     >
         {LogoImg.map((logo) => (
             <div key={logo.id} className=" mx-15 flex items-center justify-center ">
