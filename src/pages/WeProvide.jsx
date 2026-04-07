@@ -1,7 +1,7 @@
 import React from "react";
 import { features } from "../data/features";
 import FeatureCard from "../components/FeatureCard";
-import Skelly from "../assets/skelly.gif";
+import Skelly from "../assets/skelly.webp";
 
 const WeProvide = () => {
   return (
