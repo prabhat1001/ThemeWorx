@@ -25,7 +25,7 @@ const ExploreThemes = () => {
                 
                 <Link to="/themes/harry-potter">
                 <div className='w-full h-[85%]'>
-                    <img src={HarryPotter} alt="Harry Potter" className='w-full h-full object-cover'/>
+                    <img src={HarryPotter} alt="Harry Potter theme preview card" className='w-full h-full object-cover loading="lazy'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium'>Harry Potter</div>
                 </Link>
@@ -35,7 +35,7 @@ const ExploreThemes = () => {
             <div className=' border-4 bg-[#f4f4f4] hover:bg-white border-[#e6e5e5] rounded-3xl overflow-hidden hover:shadow-lg transition-transform duration-300 hover:-translate-y-2'>
                 <Link to="/themes/star-wars">
                 <div className='w-full h-[85%]'>
-                    <img src={StarWars} alt="StarWars" className='w-full h-full object-cover'/>
+                    <img src={StarWars} alt="StarWars theme preview card" className='w-full h-full object-cover loading="lazy'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium'>Star Wars</div>
                 </Link>
@@ -45,7 +45,7 @@ const ExploreThemes = () => {
                 
                 <Link to="/themes/ghibili">
                 <div className='w-full h-[85%]'>
-                    <img src={Ghibili} alt="Ghibili" className='w-full h-full object-cover'/>
+                    <img src={Ghibili} alt="Ghibili theme preview card" className='w-full h-full object-cover loading="lazy'/>
                 </div>
                 <div className='w-full h-[15%] flex justify-center items-center text-2xl font-medium '>Ghibili</div>
                 </Link>
@@ -57,7 +57,7 @@ const ExploreThemes = () => {
         {/* Button that links to theme page */}
           <div className='w-full mt-[10vh]'>  
             <Link to="/themes">
-              <button className="mt-auto bg-[#f4f4f4] self-start px-4 py-2 text-[#6579C1] border-2 border-[#5568a8] rounded-[2rem] hover:bg-[#5568a8] hover:text-white transition-colors duration-300 cursor-pointer">
+              <button className="mt-auto bg-[#f4f4f4] self-start px-4 py-2 text-[#4543c7] border-2 border-[#5568a8] rounded-[2rem] hover:bg-[#5568a8] hover:text-white transition-colors duration-300 cursor-pointer">
                 More Themes
               </button>
             </Link>
