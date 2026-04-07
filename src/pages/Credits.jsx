@@ -28,13 +28,13 @@ const creditsData = [
       },
       {
         title: "Darth Vader Card",
-        creator: "AI generated",
-        source: "#",
+        creator: "Mahmud Asrar",
+        source: "https://www.instagram.com/p/B5Ie4PghSxY/",
       },
       {
         title: "Pixelated Kitchen Scene",
         creator: "Unknown",
-        source: "#",
+        source: "https://www.reddit.com/r/wallpaper/comments/1l0qqxz/new_batch_7680x2160_ultrawide_wallpapers_0601/",
       },
       {
         title: "Spacecraft",
@@ -81,6 +81,16 @@ const creditsData = [
         creator: "Kyle Lambert",
         source: "https://www.instagram.com/p/CuKau1WxD-L/?img_index=4",
       },
+      {
+        title: "Credits Page Background",
+        creator: "Wojciech Wilk",
+        source: "https://www.artstation.com/artwork/rGEL6",
+      },
+      {
+        title: "Disclaimer Page Background",
+        creator: "Yami Yami",
+        source: "https://www.artstation.com/artwork/g0xV2E?utm_source=Pinterest&utm_medium=organic",
+      },
     ],
   },
   {
@@ -88,23 +98,28 @@ const creditsData = [
     items: [
       {
         title: "Wizarding World Inspired",
-        creator: "Various Creators",
-        source: "#",
+        creator: "JK Rowling (Warner Bros.)",
+        source: "https://www.harrypotter.com/discover/films",
       },
       {
         title: "Space Saga Inspired",
-        creator: "Various Creators",
-        source: "#",
+        creator: "George Lucas (Lucasfilm)",
+        source: "https://www.lucasfilm.com/",
       },
       {
         title: "Anime Inspired (Ghibli Style)",
-        creator: "Various Creators",
-        source: "#",
+        creator: "Hayao Miyazaki (Studio Ghibli)",
+        source: "https://www.ghibli.jp/",
       },
       {
         title: "Dark Gothic (Nosferatu Inspired)",
-        creator: "Various Creators",
-        source: "#",
+        creator: "Robert Eggers (Eggers Films)",
+        source: "https://www.universalpictures.co.uk/micro/nosferatu",
+      },
+      {
+        title: "Strange Things Inspired",
+        creator: "Duffer Brothers",
+        source: "https://www.imdb.com/title/tt4574334/",
       },
     ],
   },
@@ -152,6 +167,7 @@ const Credits = () => {
                   scrollbarColor: 'rgba(255,255,255,0.25) transparent',
                 }}
               >
+      
             
             {creditsData.map((section, index) => (
             <div key={index} className="mb-16">
@@ -180,6 +196,25 @@ const Credits = () => {
           </div>
         ))}
 
+        <div className='font-playfair mb-16'>
+            <p className=' uppercase tracking-wider text-lg md:text-xl mb-8'>Attribution Note</p>
+            <p className='italic  text-gray-400 mb-4'>In some cases, original creators could not be identified due to the nature of content sharing across the internet. These assets are used strictly for inspirational and transformative purposes within a development environment.
+            </p>
+            <p className='italic  text-gray-400'>If you are the rightful creator of any media listed here and would like proper credit, modification, or removal, please contact us. We will take immediate action.
+            </p>
+        </div>
+
+        <div className='font-playfair mb-8'>
+            <p className=' uppercase tracking-wider text-lg md:text-xl mb-8'>With respect</p>
+            <p className='italic  mb-4'>To every creator whose work contributed to this platform,
+              <br />
+              thank you for shaping the visual experience of ThemeWorx.
+            </p>
+            <p className='italic text-[#f88d4e]'> - Team ThemeWorx
+            </p>
+        </div>
+              
+              
               </div>
     
             </div>
