@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import json from "react-syntax-highlighter/dist/esm/languages/prism/json";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { FiCopy, FiCheck } from "react-icons/fi";
+
+SyntaxHighlighter.registerLanguage("json", json);
 
 const CodeBlock = ({ code }) => {
   const [copied, setCopied] = useState(false);
