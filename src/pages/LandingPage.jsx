@@ -2,6 +2,7 @@ import React from "react";
 import background from "../assets/dungeon.webp";
 import CentreImg from "../assets/mystical.webp";
 import Navbar from "../components/Navbar";
+import HeroVideo from "../components/HeroVideo";
 // import LogoImg from '../../assets/logo.png';
 
 
@@ -36,8 +37,8 @@ const LandingPage = () => {
       </div>
 
       {/* Middle Img */}
-      <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:w-[70vw] md:w-[70vw] w-[90vw] aspect-video  rounded-3xl shadow-xl/20 ">
-        <img
+      <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:w-[70vw] md:w-[70vw] w-[90vw] aspect-video rounded-3xl shadow-xl/20 ">
+        {/* <img
           src={CentreImg}
           alt="Mystical landscape preview"
           className="w-full h-full object-cover rounded-3xl contrast-125 brightness-75 "
@@ -45,7 +46,9 @@ const LandingPage = () => {
           loading="eager"
           decoding="async"
          
-        />
+        /> */}
+
+        <HeroVideo />
       </div>
 
       {/* Landing 2 */}
