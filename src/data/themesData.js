@@ -5,6 +5,7 @@ import Nosferatu from "../assets/NosferatuCover.jpg";
 import Ghibili from "../assets/ghibiliCover.jpg";
 import StrangerThings from "../assets/StrangerThings.jpg";
 import Jurassic from "../assets/JurrasicCover.jpg";
+import DarkAcademia from "../assets/dark-academia.webp";
 
 // Banner Images for each card
 import HarryPotterBanner from "../assets/AlwaysBanner.jpg";
@@ -900,5 +901,19 @@ export const ThemesData = [
   ]
 },
     `,
+  },
+  {
+    id: 7,
+    slug: "dark-academia",
+    src: DarkAcademia,
+    alt: "JurassicPark",
+    title: "Dark Academia",
+    bannerImg: JurassicParkBanner,
+    previewImg: JurassicParkThemeImg,
+    tagline:
+      " '' Life finds a way, Welcome… to a world where giants walk again.'' ",
+    description:"",
+    themeImg: "",
+    themeCode: ``,
   },
 ];
