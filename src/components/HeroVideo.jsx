@@ -16,10 +16,6 @@ const HeroVideo = () => {
           src="https://res.cloudinary.com/dvkjm6742/video/upload/v1777484509/promo-compressed-final_xv5tc3.mp4"
           type="video/mp4"
         />
-        <source
-          src="https://res.cloudinary.com/dvkjm6742/video/upload/v1777466360/promo-compressed-final_lsijo9.webm"
-          type="video/webm"
-        />
       </video>
     </div>
   )
