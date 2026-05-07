@@ -28,6 +28,14 @@ export default function ThemeWorxForm() {
   const cfg       = TYPES[type];
   const isSending = status === "sending";
   const isErr     = status === "error";
+
+
+  // ADD THIS - Temporary debug log
+  useEffect(() => {
+    console.log('🔑 Web3Forms Key:', WEB3FORMS_KEY);
+    console.log('🔑 Is it undefined?', WEB3FORMS_KEY === undefined);
+    console.log('🔑 Key length:', WEB3FORMS_KEY?.length);
+  }, []);
   
   useEffect(() => {
   if (status === "success") {
