@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import HarryPotter from '../assets/hp.webp'
 import StarWars from '../assets/Darth.webp'
-import Ghibili from '../assets/ghibili.webp'
+import Ghibili from '../assets/Ghibili.webp'
 
 const ExploreThemes = () => {
   return (
