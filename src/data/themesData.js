@@ -4,7 +4,7 @@ import StarWars from "../assets/starwars.jfif";
 import Nosferatu from "../assets/NosferatuCover.jpg";
 import Ghibili from "../assets/ghibiliCover.jpg";
 import StrangerThings from "../assets/StrangerThings.jpg";
-import Jurassic from "../assets/JurrasicCover.jpg";
+import Jurassic from "../assets/jurrasicCover.jpg";
 import DarkAcademia from "../assets/dark-academia.webp";
 
 
