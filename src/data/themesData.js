@@ -7,6 +7,7 @@ import StrangerThings from "../assets/StrangerThings.jpg";
 import Jurassic from "../assets/JurrasicCover.jpg";
 import DarkAcademia from "../assets/dark-academia.webp";
 
+
 // Banner Images for each card
 import HarryPotterBanner from "../assets/AlwaysBanner.jpg";
 import darthVaderBanner from "../assets/darthVader.jpg";
@@ -14,6 +15,7 @@ import NosferatuBanner from "../assets/darkcastle.png";
 import GhibiliBanner from "../assets/GhibiliBanner.png";
 import StrangerThingsBanner from "../assets/St-banner.jpg";
 import JurassicParkBanner from "../assets/DinoBanner.jpg";
+import DarkAcademiaBanner from "../assets/DarkAcademiaBanner.webp";
 
 // Theme Screenshot Image
 import HarryPotterThemeImg from "../assets/Preview/HP-theme-preview.png";
@@ -22,6 +24,7 @@ import NosferatuThemeImg from "../assets/Preview/Count-preview.png";
 import GhibiliThemeImg from "../assets/Preview/Ghibili-theme-preview.png";
 import StrangerThingsThemeImg from "../assets/Preview/Stranger-theme-preview.png";
 import JurassicParkThemeImg from "../assets/Preview/Jurassic-theme-preview.png";
+import DarkAcademiaThemeImg from "../assets/Preview/DarkAcademiaPreview.jpg";
 
 export const ThemesData = [
   {
@@ -906,14 +909,240 @@ export const ThemesData = [
     id: 7,
     slug: "dark-academia",
     src: DarkAcademia,
-    alt: "JurassicPark",
+    alt: "Dark Academia",
     title: "Dark Academia",
-    bannerImg: JurassicParkBanner,
-    previewImg: JurassicParkThemeImg,
+    bannerImg: DarkAcademiaBanner,
+    previewImg: DarkAcademiaThemeImg,
     tagline:
-      " '' Life finds a way, Welcome… to a world where giants walk again.'' ",
-    description:"",
+      " '' Enter a realm of shadows, literature, and minds that dare to wander too far'' ",
+    description:"Step into the quiet, candlelit world of Dark Academia with this VS Code theme—where code feels less like logic and more like literature. Wrapped in warm sepia tones, deep shadows, and a scholar’s calm, it transforms your workspace into a place of focus and quiet obsession. Every line feels like a whisper to the soul, as if you were meant for another time, another era—one where thoughts linger longer and the mind finds meaning beyond the present.",
     themeImg: "",
-    themeCode: ``,
+    themeCode: `// DARK ACADEMIA — BOOKSHELF
+
+"workbench.colorCustomizations": {
+  /* Base */
+  "foreground": "#b07840",
+  "focusBorder": "#5a3818",
+
+  /* Editor */
+  "editor.background": "#16100a",
+  "editor.foreground": "#e8dcc8",
+  "editorLineNumber.foreground": "#2e2010",
+  "editorLineNumber.activeForeground": "#8a7050",
+  "editorCursor.foreground": "#c8922a",
+  "editor.selectionBackground": "#5a381844",
+  "editor.inactiveSelectionBackground": "#2a1e1033",
+  "editor.lineHighlightBackground": "#2a1e1055",
+
+  /* Sidebar */
+  "sideBar.background": "#0e0b06",
+  "sideBar.foreground": "#5a4028",
+  "sideBarTitle.foreground": "#8a6030",
+  "sideBarSectionHeader.background": "#0e0b06",
+  "sideBarSectionHeader.foreground": "#8a6030",
+
+  /* Activity Bar */
+  "activityBar.background": "#0e0b06",
+  "activityBar.foreground": "#d4a96a",
+  "activityBar.inactiveForeground": "#3a2810",
+  "activityBarBadge.background": "#8b3a2a",
+  "activityBarBadge.foreground": "#f0e8d8",
+  "activityBar.activeBorder": "#c8922a",
+
+  /* Tabs */
+  "editorGroupHeader.tabsBackground": "#0e0b06",
+  "tab.activeBackground": "#16100a",
+  "tab.activeForeground": "#d4a96a",
+  "tab.inactiveBackground": "#120e08",
+  "tab.inactiveForeground": "#4a3820",
+  "tab.border": "#2a1e10",
+
+  /* Title Bar */
+  "titleBar.activeBackground": "#0e0b06",
+  "titleBar.activeForeground": "#c8922a",
+  "titleBar.inactiveBackground": "#0e0b06",
+  "titleBar.inactiveForeground": "#3a2810",
+
+  /* Status Bar */
+  "statusBar.background": "#0e0b06",
+  "statusBar.foreground": "#4a3820",
+  "statusBar.noFolderBackground": "#0e0b06",
+
+  /* Terminal */
+  "terminal.background": "#0a0806",
+  "terminal.foreground": "#c8922a",
+  "terminalCursor.foreground": "#c8922a",
+
+  /* Panels */
+  "panel.background": "#0a0806",
+  "panel.border": "#2a1e10",
+
+  /* Inputs */
+  "input.background": "#1a1208",
+  "input.foreground": "#e8dcc8",
+  "input.border": "#3a2810",
+  "input.placeholderForeground": "#4a3820",
+  "inputOption.activeBackground": "#3a2810",
+  "inputOption.activeForeground": "#c8922a",
+  "inputOption.activeBorder": "#c8922a",
+
+  /* Dropdown */
+  "dropdown.background": "#1a1208",
+  "dropdown.foreground": "#e8dcc8",
+  "dropdown.border": "#3a2810",
+  "dropdown.listBackground": "#120e08",
+
+  /* Command Palette */
+  "quickInput.background": "#120e08",
+  "quickInput.foreground": "#e8dcc8",
+  "quickInputList.focusBackground": "#2a1e10",
+  "quickInputList.focusForeground": "#c8922a",
+  "quickInputTitle.background": "#0e0b06",
+
+  /* Menu */
+  "menu.background": "#120e08",
+  "menu.foreground": "#e8dcc8",
+  "menu.selectionBackground": "#2a1e10",
+  "menu.selectionForeground": "#c8922a",
+  "menu.separatorBackground": "#2a1e10",
+  "menu.border": "#3a2810",
+  "menubar.selectionBackground": "#2a1e10",
+  "menubar.selectionForeground": "#c8922a",
+
+  /* Lists */
+  "list.activeSelectionBackground": "#2a1e10",
+  "list.activeSelectionForeground": "#c8922a",
+  "list.hoverBackground": "#1e1508",
+  "list.hoverForeground": "#d4a96a",
+  "list.inactiveSelectionBackground": "#1a1208",
+  "list.inactiveSelectionForeground": "#b07840",
+
+  /* Settings */
+  "settings.headerForeground": "#c8922a",
+  "settings.modifiedItemIndicator": "#8b3a2a",
+  "settings.checkboxBackground": "#1a1208",
+  "settings.checkboxForeground": "#e8dcc8",
+  "settings.checkboxBorder": "#3a2810",
+  "settings.dropdownBackground": "#1a1208",
+  "settings.dropdownForeground": "#e8dcc8",
+  "settings.dropdownBorder": "#3a2810",
+  "settings.dropdownListBorder": "#3a2810",
+  "settings.textInputBackground": "#1a1208",
+  "settings.textInputForeground": "#e8dcc8",
+  "settings.textInputBorder": "#3a2810",
+
+  /* Scrollbar */
+  "scrollbarSlider.background": "#2a1e1055",
+  "scrollbarSlider.hoverBackground": "#3a2810aa",
+  "scrollbarSlider.activeBackground": "#5a3818"
+},
+
+"editor.tokenColorCustomizations": {
+  "comments": "#3a2c1c",
+  "strings": "#8b3a2a",
+  "keywords": "#c8922a",
+  "numbers": "#c87840",
+  "functions": "#e8dcc8",
+  "variables": "#b07840",
+  "types": "#7a8c5a",
+
+  "textMateRules": [
+    {
+      "scope": [
+        "entity.other.attribute-name.js.jsx",
+        "meta.tag.attributes.js.jsx",
+        "meta.tag.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#7a8c5a"
+      }
+    },
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#3a2c1c",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#8b3a2a"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#c8922a",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#7a5c38"
+      }
+    },
+    {
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#e8dcc8"
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#b07840"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "entity.name.tag.html",
+        "entity.name.tag.jsx",
+        "entity.name.tag.tsx"
+      ],
+      "settings": {
+        "foreground": "#d4a96a"
+      }
+    },
+    {
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#c87840"
+      }
+    },
+    {
+      "scope": "support.class",
+      "settings": {
+        "foreground": "#7a8c5a",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "storage.type",
+      "settings": {
+        "foreground": "#c8922a",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "punctuation",
+      "settings": {
+        "foreground": "#4a3828"
+      }
+    },
+    {
+      "scope": [
+        "support.type.property-name.json.comments",
+        "string.json.comments"
+      ],
+      "settings": {
+        "foreground": "#e8dcc8"
+      }
+    }
+  ]
+},
+`,
   },
 ];
