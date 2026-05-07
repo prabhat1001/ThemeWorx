@@ -3,7 +3,7 @@ import StarWars from '../assets/StarWars.png';
 import Ghibili from '../assets/Ghibili.png';
 import StrangerThings from '../assets/StrangerThings.png';
 import JurassicPark from '../assets/JurassicPark.png';
-import Nosferatu from '../assets/Nosferatu.png';
+import Nosferatu from '../assets/nosferatu.png';
 
 export const LogoImg = [
     {
