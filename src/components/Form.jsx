@@ -12,7 +12,6 @@ const TYPES = {
 
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-
 const TOTAL = 10; // seconds for success message countdown
 
 
@@ -28,36 +27,26 @@ export default function ThemeWorxForm() {
   const cfg       = TYPES[type];
   const isSending = status === "sending";
   const isErr     = status === "error";
-
-
-   // ADD THIS - Debug logging
-  useEffect(() => {
-    console.log('=== ENV DEBUG ===');
-    console.log('WEB3FORMS_KEY:', WEB3FORMS_KEY);
-    console.log('Is undefined?', WEB3FORMS_KEY === undefined);
-    console.log('Type:', typeof WEB3FORMS_KEY);
-    console.log('All env vars:', import.meta.env);
-  }, []);
   
   useEffect(() => {
-  if (status === "success") {
-    setCountdown(TOTAL);
-    let c = TOTAL;
-    timerRef.current = setInterval(() => {
-      c -= 1;
-      setCountdown(c);
-      if (c <= 0) {
-        clearInterval(timerRef.current);
-        setStatus("idle");
-        setType("suggest");
-        setMsg("");
-        setEmail("");
-        ghRef.current = "";
-      }
-    }, 1000);
-  }
-  return () => clearInterval(timerRef.current);
-}, [status]);
+    if (status === "success") {
+      setCountdown(TOTAL);
+      let c = TOTAL;
+      timerRef.current = setInterval(() => {
+        c -= 1;
+        setCountdown(c);
+        if (c <= 0) {
+          clearInterval(timerRef.current);
+          setStatus("idle");
+          setType("suggest");
+          setMsg("");
+          setEmail("");
+          ghRef.current = "";
+        }
+      }, 1000);
+    }
+    return () => clearInterval(timerRef.current);
+  }, [status]);
 
   const handleSelect = (val) => { setType(val); setMsg(""); };
 
@@ -67,24 +56,48 @@ export default function ThemeWorxForm() {
       setTimeout(() => setTaErr(false), 1600);
       return;
     }
+    
     setStatus("sending");
+    
     try {
-      const res  = await fetch("https://api.web3forms.com/submit", {
+      // Build complete message with all info
+      const fullMessage = `
+Type: ${type}
+Message: ${msg}
+GitHub: ${ghRef.current || "Not provided"}
+      `.trim();
+      
+      const formData = {
+        access_key: WEB3FORMS_KEY,
+        subject: `ThemeWorx — ${cfg.btnLabel}`,
+        name: "ThemeWorx User",
+        email: email.trim() || "noreply@themeworx.com", // Must be valid email format
+        message: fullMessage,
+      };
+      
+      console.log('📤 Submitting:', formData); // Debug log
+      
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `ThemeWorx — ${cfg.btnLabel}`,
-          type, message: msg,
-          email:  email || "not provided",
-          github: ghRef.current || "not provided",
-          botcheck: "",
-        }),
+        headers: { 
+          "Content-Type": "application/json", 
+          Accept: "application/json" 
+        },
+        body: JSON.stringify(formData),
       });
+      
       const data = await res.json();
-      setStatus(data.success ? "success" : "error");
-      if (!data.success) setTimeout(() => setStatus("idle"), 3000);
-    } catch {
+      console.log('📥 Response:', data); // Debug log
+      
+      if (data.success) {
+        setStatus("success");
+      } else {
+        console.error('❌ Error:', data.message);
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch (err) {
+      console.error('❌ Network error:', err);
       setStatus("error");
       setTimeout(() => setStatus("idle"), 3000);
     }
@@ -96,7 +109,6 @@ export default function ThemeWorxForm() {
       {/* Page */}
       <div className="w-full min-w-72">
         
-
         {/* Title */}
         <h1 className="text-5xl font-bold mb-3 text-white leading-tight font-poppins">
           Got a Vibe in Mind{" "}<span className="text-red-600">?</span>
@@ -112,22 +124,22 @@ export default function ThemeWorxForm() {
         <div className="bg-white/[0.03] border-4 border-[#504f4f] rounded-4xl p-10 ">
 
           {status === "success" ? (
-  <div className="text-center flex flex-col justify-center items-center">
-    <Lottie
-      animationData={animationData}
-      loop={true}
-      autoplay={true}
-      style={{ height: 300, width: 300 }}
-    />
-    <h3 className="text-xl font-bold text-[#99989e] mb-2"
-      style={{ fontFamily: "'Poppins', sans-serif" }}>
-      Dropped. We got it.
-    </h3>
-    <p className="text-[#99989e]/50 text-sm leading-relaxed">
-      Thanks for contributing to the vibe.<br />We read everything.
-    </p>
-  </div>
-) : (
+            <div className="text-center flex flex-col justify-center items-center">
+              <Lottie
+                animationData={animationData}
+                loop={true}
+                autoplay={true}
+                style={{ height: 300, width: 300 }}
+              />
+              <h3 className="text-xl font-bold text-[#99989e] mb-2"
+                style={{ fontFamily: "'Poppins', sans-serif" }}>
+                Dropped. We got it.
+              </h3>
+              <p className="text-[#99989e]/50 text-sm leading-relaxed">
+                Thanks for contributing to the vibe.<br />We read everything.
+              </p>
+            </div>
+          ) : (
             <>
               {/* Label */}
               <p className="text-[10px] uppercase tracking-widest text-[#99989e]/80 mb-3"
