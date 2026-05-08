@@ -22,6 +22,7 @@ export default function ThemeWorxForm() {
   const ghRef               = useRef("");
   const [status, setStatus] = useState("idle");
   const [taErr,  setTaErr]  = useState(false);
+  const [emailErr, setEmailErr] = useState(false);
   const [countdown, setCountdown] = useState(10);
   const timerRef = useRef(null);
   const cfg       = TYPES[type];
@@ -50,10 +51,24 @@ export default function ThemeWorxForm() {
 
   const handleSelect = (val) => { setType(val); setMsg(""); };
 
+  // Email validation function
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = async () => {
+    // Validate message
     if (!msg.trim()) {
       setTaErr(true);
       setTimeout(() => setTaErr(false), 1600);
+      return;
+    }
+    
+    // Validate email if provided
+    if (email.trim() && !isValidEmail(email.trim())) {
+      setEmailErr(true);
+      setTimeout(() => setEmailErr(false), 3000);
       return;
     }
     
@@ -183,11 +198,21 @@ GitHub: ${ghRef.current || "Not provided"}
                     style={{ fontFamily: "'Syne', sans-serif" }}>
                     Email
                   </label>
-                  <input type="email" placeholder="you@example.com"
-                    value={email} onChange={e => setEmail(e.target.value)}
-                    className="bg-[#0f0f0f]/70 border border-white/[0.07] rounded-full px-4 py-3 text-sm text-[#99989e] placeholder-[#99989e]/30 outline-none focus:border-red-800 focus:ring-2 focus:ring-red-900/30 transition-all duration-200"
+                  <input 
+                    type="email" 
+                    placeholder="you@example.com"
+                    value={email} 
+                    onChange={e => {
+                      setEmail(e.target.value);
+                      setEmailErr(false); // Clear error on input change
+                    }}
+                    className={`bg-[#0f0f0f]/70 border rounded-full px-4 py-3 text-sm text-[#99989e] placeholder-[#99989e]/30 outline-none transition-all duration-200
+                      ${emailErr ? "border-red-700 focus:border-red-700" : "border-white/[0.07] focus:border-red-800"}
+                      focus:ring-2 ${emailErr ? "focus:ring-red-900/50" : "focus:ring-red-900/30"}`}
                   />
-                  <span className="text-[11px] text-[#99989e]/30">Only if you want a reply.</span>
+                  <span className={`text-[11px] transition-colors duration-200 ${emailErr ? "text-red-400" : "text-[#99989e]/30"}`}>
+                    {emailErr ? "Please enter a valid email address" : "Only if you want a reply."}
+                  </span>
                 </div>
 
                 <div className="flex flex-col gap-2">
