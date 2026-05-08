@@ -30,11 +30,13 @@ export default function ThemeWorxForm() {
   const isErr     = status === "error";
 
 
-  // ADD THIS - Temporary debug log
+   // ADD THIS - Debug logging
   useEffect(() => {
-    console.log('🔑 Web3Forms Key:', WEB3FORMS_KEY);
-    console.log('🔑 Is it undefined?', WEB3FORMS_KEY === undefined);
-    console.log('🔑 Key length:', WEB3FORMS_KEY?.length);
+    console.log('=== ENV DEBUG ===');
+    console.log('WEB3FORMS_KEY:', WEB3FORMS_KEY);
+    console.log('Is undefined?', WEB3FORMS_KEY === undefined);
+    console.log('Type:', typeof WEB3FORMS_KEY);
+    console.log('All env vars:', import.meta.env);
   }, []);
   
   useEffect(() => {
