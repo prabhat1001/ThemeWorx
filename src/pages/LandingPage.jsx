@@ -52,10 +52,10 @@ const LandingPage = () => {
       </div>
 
       {/* Landing 2 */}
-      <div className=" w-[100vw] h-[80vh] lg:h-[110vh]  ">
+      <div className=" w-[100vw] h-[70vh] lg:h-[110vh]  ">
     
     {/* Why? heading */}
-    <div className="  absolute z-20 mt-[30vh] lg:mt-[60vh] w-full flex flex-col items-center px-4 ">
+    <div className="  absolute z-20 mt-[30vh] lg:mt-[60vh] w-full flex flex-col items-center px-4">
       <div className=" relative  uppercase text-8xl md:text-9xl lg:text-9xl font-inter font-bold 
       bg-gradient-to-b from-black from-30% to-transparent to-80% bg-clip-text text-transparent">
         WHY?
