@@ -1,7 +1,3 @@
-
-import VidPoster from '../assets/HeroVideoPoster2.png'
-
-
 const HeroVideo = () => {
   return (
     <div style={{ width: '100%', height: '100%' }}>
@@ -10,7 +6,7 @@ const HeroVideo = () => {
         controls
         playsInline
         preload="metadata"
-        poster={VidPoster}
+        poster="/assets/HeroVideoPoster.webp"
       >
         <source
           src="https://res.cloudinary.com/dvkjm6742/video/upload/v1777484509/promo-compressed-final_xv5tc3.mp4"
