@@ -7,10 +7,10 @@ import StrangerThings from "../assets/StrangerThings.jpg";
 import Jurassic from "../assets/jurrasicCover.jpg";
 import DarkAcademia from "../assets/dark-academia.webp";
 import Wizard from '../assets/readingWizard.jpg';
-import Gryffindor from '../assets/Gryffindor_card.jpeg';
-import Slytherin from '../assets/Slytherin_card.jpeg';
-import Hufflepuff from '../assets/Hufflepuff_card.jpeg';
-import Ravenclaw from '../assets/Ravenclaw_card.jpeg';
+import Gryffindor from '../assets/Gryffindor_card.webp';
+import Slytherin from '../assets/Slytherin_card.webp';
+import Hufflepuff from '../assets/Hufflepuff_card.webp';
+import Ravenclaw from '../assets/Ravenclaw_card.webp';
 
 
 
@@ -22,10 +22,10 @@ import GhibiliBanner from "../assets/GhibiliBanner.png";
 import StrangerThingsBanner from "../assets/St-banner.jpg";
 import JurassicParkBanner from "../assets/DinoBanner.jpg";
 import DarkAcademiaBanner from "../assets/DarkAcademiaBanner.webp";
-import GryffindorBanner from '../assets/Gryff_bg.png';
-import SlytherinBanner from '../assets/Slyth_bg.jpeg';
-import HufflepuffBanner from '../assets/Huffle_bg.jpg';
-import RavenclawBanner from '../assets/Raven_bg.jpeg';
+import GryffindorBanner from '../assets/Gryff_bg.webp';
+import SlytherinBanner from '../assets/Slyth_bg.webp';
+import HufflepuffBanner from '../assets/Huffle_bg.webp';
+import RavenclawBanner from '../assets/Raven_bg.webp';
 import ArcaneBanner from '../assets/arcane-hearth.png';
 
 // Theme Screenshot Image
