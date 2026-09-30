@@ -7,10 +7,10 @@ import StrangerThings from "../assets/StrangerThings.jpg";
 import Jurassic from "../assets/jurrasicCover.jpg";
 import DarkAcademia from "../assets/dark-academia.webp";
 import Wizard from '../assets/readingWizard.jpg';
-import Gryffindor from '../assets/Gryffindor_Card.jpeg';
-import Slytherin from '../assets/Slytherin_Card.jpeg';
-import Hufflepuff from '../assets/Hufflepuff_Card.jpeg';
-import Ravenclaw from '../assets/Ravenclaw_Card.jpeg';
+import Gryffindor from '../assets/Gryffindor_card.jpeg';
+import Slytherin from '../assets/Slytherin_card.jpeg';
+import Hufflepuff from '../assets/Hufflepuff_card.jpeg';
+import Ravenclaw from '../assets/Ravenclaw_card.jpeg';
 
 
 
