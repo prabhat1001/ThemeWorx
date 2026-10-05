@@ -132,13 +132,13 @@ ThemeWorx is a frontend project built around reusable components, structured the
 
 # 🧠 Built with intention
 
-Design first - Every theme starts with a visual identity — colors, atmosphere, references, and the feeling I want the editor to create.
+Design first - Every theme starts with a visual identity — colours, atmosphere, references, and the feeling I want the editor to create.
 
 Reusable architecture - Theme information is structured so new themes can be added without duplicating entire pages or components.
 
 Developer-focused UX - The visual experience is important, but so is getting from “I like this” → “I'm using this.”
 
-Small details matter - Spacing, typography, theme previews, copy interactions, responsive behavior, and navigation are all part of the experience.
+Small details matter - Spacing, typography, theme previews, copy interactions, responsive behaviour, and navigation are all part of the experience.
 
 <br>
 <br>
@@ -166,11 +166,12 @@ The multiverse is still expanding.
 
 # 💡 Have a world in mind?
 
-Maybe you want a theme inspired by your favorite movie, anime, game, book, character, or simply a specific aesthetic.
+Maybe you want a theme inspired by your favourite movie, anime, game, book, character, or simply a specific aesthetic.
 
 Tell me what you'd like to see next.
 
-→ Suggest a Theme
+→ [Suggest a Theme](https://themeworx.vercel.app/about#feedback)
+
 
 <br>
 <br>
@@ -179,54 +180,14 @@ Tell me what you'd like to see next.
 
 ThemeWorx started with a simple thought:
 
-Developers spend a huge part of their day inside their code editor. Why shouldn't that space feel personal?
-
-I enjoy both frontend development and visual design, so ThemeWorx became a way to combine the two.
-
-I wanted to experiment with what happens when developer tooling meets fandom culture, visual storytelling, and a little bit of personality.
-
-What started as a theme experiment gradually became a complete frontend product — with theme discovery, detail pages, configuration generation, responsive UI, animations, documentation, and a growing collection of worlds.
-
-I'm building ThemeWorx as a solo project, which means I'm designing it, coding it, testing it, breaking it, fixing it, and occasionally wondering why that one CSS property refuses to behave.
+Developers spend a huge part of their day inside their code editor. Why shouldn't that space feel personal? I enjoy both frontend development and visual design, so ThemeWorx became a way to combine the two. I wanted to experiment with what happens when developer tooling meets fandom culture, visual storytelling, and a little bit of personality. What started as a theme experiment gradually became a complete frontend product with theme discovery, detail pages, configuration generation, responsive UI, animations, documentation, and a growing collection of worlds. I'm building ThemeWorx as a solo project, which means I'm designing it, coding it, testing it, breaking it, fixing it, and occasionally wondering why that one CSS property refuses to behave.
 
 And I'm still adding to it.
 
 <br>
 <br>
 
-🚀 Try ThemeWorx
-<div align="center">
-Find a world. Pick a theme. Make VS Code yours.
-
-🌐 Explore ThemeWorx →
-
-</div>
-📌 Project status
-
-ThemeWorx is an actively evolving personal project.
-
-I'm continuing to experiment with:
-
-new theme concepts
-better theme discovery
-improved customization
-community-driven ideas
-new ways to make developer tools feel more personal
-
-If you have an idea, I'd love to hear it.
+© 2026 ThemeWorx | No muggles were harmed in this build.
 
 
-Built by Prabhat Saraswat —
-a frontend developer who likes designing things almost as much as building them.
 
-Website ·
-GitHub ·
-LinkedIn
-
-<br />
-
-© 2026 ThemeWorx
-
-No muggles were harmed in this build.
-
-</div> 
